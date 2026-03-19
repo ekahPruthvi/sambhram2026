@@ -4,8 +4,10 @@ function loadSVG () {
     .then((svg) => {
         document.getElementById('bg_city').innerHTML = svg;
         document.querySelector('#bg_city svg').setAttribute("preserveAspectRatio", "xMidYMid slice");
+        doneLoading();
         setAnimationScroll();
     })
+
 }
 
 loadSVG();
@@ -47,4 +49,9 @@ function setAnimationScroll () {
             y: -700
         })
     ]);
+}
+
+function doneLoading () {
+    const load = document.getElementById("load");
+    load.style.display = "none";
 }
