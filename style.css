@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.cdnfonts.com/css/allenia');
 @import url('https://fonts.googleapis.com/css2?family=Frijole&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
 
 body {
     margin: 0;
     background-color: #000000;
     font-family: Poppins;
-    color: #eee;
+    color: #ffffff;
     overflow-x: hidden;
 }
 
@@ -107,6 +107,8 @@ main {
     padding-block: 5em;
     gap: 5em;
     position: relative;
+    background-color: #ffecd1;
+    color: #000;
 }
 
 main::after {
@@ -117,7 +119,13 @@ main::after {
     z-index: 100;
     left: 0;
     bottom: 100%;
-    background-image: linear-gradient(to top, #000, #0000);
+    /* background-image: linear-gradient(to top, #ffecd1, #0000); */
+}
+
+.img-border {
+    position: absolute;
+    bottom: 0;
+    transform: translateY(250%);
 }
 
 .friend {
@@ -135,9 +143,9 @@ main::after {
 
 .banner .content .item:nth-child(1) {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-content: center;
-    font-size: 1.2em;
+    font-size: clamp(0.5rem, 5vw, 1rem);
     transform: translateY(-120px);
 }
 
@@ -157,10 +165,10 @@ main::after {
 
 .banner .title .little-title {
     text-align: center;
-    font-size: clamp(2rem, 5vw, 3rem);
+    font-size: clamp(1rem, 3vw, 2rem);
     text-transform: uppercase;
     font-weight: 400;
-    /* font-family: "Love Ya Like A Sister", cursive; */
+    font-family: "Fredericka the Great", serif;
 }
 
 .friend ul img {
@@ -192,8 +200,28 @@ main::after {
 }
 
 
-header menu { 
+menu { 
+    position: fixed;
+    z-index: 999999;
     display: none;
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 10px;
+    background-color: #ffecd1;
+    border-radius: 60px;
+    color: black;
+    font-weight: 800;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+menu:active {
+    font-weight: 900;
+    font-size: 20px;
 }
 
 @media screen and (max-width: 1023px) {
@@ -234,17 +262,27 @@ header menu {
         display: none;
     } 
 
-    header menu {
+    menu {
         display: block;
     }
 
-    header .logo img {
-        height: 70px;
+
+    header {
+        justify-content: center;
     }
+
+    header .logo img {
+        height: 80px;
+    }
+
 
     .banner .content {
         text-align: center;
     }  
+
+    .img-border {
+        display: none;
+    }
     
 }
 #bg_city {
