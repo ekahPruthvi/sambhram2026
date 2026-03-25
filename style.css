@@ -404,7 +404,6 @@ a:hover {
     background-color: #000;
     display: flex;
     padding: 20px;
-    background-image: url("./try.jpg");
     max-height: 70vh;
     border-radius: 25px;
     border: 5px solid rgb(255, 225, 182);
@@ -426,6 +425,51 @@ a:hover {
     display: none;
 }
 
+.popup {
+    position: fixed;
+    top: 5vh;
+    left: 5vw;
+    z-index: 999999;
+    width: 90vw;
+    height: 90vh;
+    background-color: #39393994;
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.closepop {
+    position: absolute;
+    width: 30px;
+    right: 20px;
+}
+
+.closepop:hover {
+    scale: 1.2;
+}
+
+#imgpop img {
+    height: 70vh;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.783) 0px 7px 29px 0px;
+}
+
+#pack {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    gap: 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
 menu { 
     position: fixed;
     z-index: 999999;
@@ -443,6 +487,17 @@ menu {
     color: black;
     font-weight: 800;
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.button {
+    padding: 20px;
+    background-color: #c6a679;
+    border: 2px black solid;
+    border-radius: 10px;
+    color: black;
+    font-size: 20px;
+    font-variant: small-caps;
+    font-weight: 500;
 }
 
 @media screen and (max-width: 1023px) {
@@ -508,7 +563,7 @@ menu {
 
     .me p {
         font-size: 1em;
-        padding: 0;
+        padding: 10px;
     }
 
     .bob {
@@ -539,6 +594,27 @@ menu {
 
     .events-grid img {
         max-height: 50vh;
+    }
+
+    .disk {
+        position: fixed;
+        top: -25vh;
+        width: 100vw;
+        left: 0vw;
+    }
+
+    #pack {
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    #imgpop img {
+        width: 40vw;
+        height: auto;
+    }
+
+    .button {
+        border-radius: 0px;
     }
 
 }

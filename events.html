@@ -53,7 +53,7 @@
                 opacity: 0;
             }
 
-            .card {
+            .try {
                 width: 70vw;
                 height: 50vh;
                 z-index: 99;
@@ -71,7 +71,7 @@
     <img class="disk" src="./img/diskeve.svg"></img>
 
     <header>
-        <img  class="sam" src="img/samlogo.avif" alt=""></img>
+        <a href="./index.html"><img class="sam" src="img/samlogo.avif" alt=""></img></a>
         <nav>
             <ul>
                 <li><a href="./index.html">Home</a></li>
@@ -93,6 +93,13 @@
     <div class="empty" id="empty">
         <p>No results found</p>
         <p>Try a different search term.</p>
+    </div>
+    <div class="popup hidden" id="popup">
+        <img src="./img/x.svg" onclick="closePopup()" class="closepop"></img>
+        <div id="pack">
+            <div id="imgpop"></div>
+            <div id="popcontent"></div>
+        </div>
     </div>
     <div class="grid" id="grid"></div>
    
