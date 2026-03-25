@@ -20,8 +20,8 @@ window.addEventListener("click", function(event) {
 }); 
 
 var cards = [
-    { name: "Dance", info: "Dance Dance bro danceee yeey" },
-    { name: "Bob sings", info: "Singer can sing like a singing silkman as he is a singer" },
+    { name: "Dance", info: "Dance Dance bro danceee yeey", img: "try" },
+    { name: "Bob sings", info: "Singer can sing like a singing silkman as he is a singer", img: "" },
 ];
 
 var grid = document.getElementById("grid");
@@ -48,11 +48,11 @@ function render(filter) {
     el.className = "card";
     el.style.animationDelay = i * 60 + "ms";
     el.innerHTML =
-        '<div class="card-head">' +
-        '<span class="card-icon">' + card.name.charAt(0) + '</span>' +
-        '<h2>' + card.name + '</h2>' +
-        '</div>' +
-        '<p>' + card.info + '</p>';
+        '<div class="card '+card.img+'">' +
+        '<div class="inner-card">' + 
+        '<h1>'+card.name+'</h1>' +
+        '<p>'+card.info+'</p>' +
+        '</div>' + '</div>'
     grid.appendChild(el);
     });
 }
