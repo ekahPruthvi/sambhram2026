@@ -417,8 +417,10 @@ a:hover {
 }
 
 .events-grid img:hover {
-  transform: rotateZ(1deg) rotateY(10deg) scale(1.1);
-  box-shadow: 0 5em 2em #111;
+    transform: rotateZ(1deg) rotateY(10deg) scale(1.1);
+    box-shadow: 0 5em 2em #111;
+    -ms-overflow-style: none;   
+    scrollbar-width: none;
 }
 
 .events-grid::-webkit-scrollbar {
@@ -432,13 +434,14 @@ a:hover {
     z-index: 999999;
     width: 90vw;
     height: 90vh;
-    background-color: #39393994;
+    background-color: rgba(24, 24, 24, 0.87);
     border-radius: 30px;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     display: flex;
     flex-direction: column;
     padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.498);
 }
 
 .hidden {
@@ -459,6 +462,7 @@ a:hover {
     height: 70vh;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.783) 0px 7px 29px 0px;
+    border: 1px solid rgba(255, 255, 255, 0.498);
 }
 
 #pack {
@@ -468,7 +472,14 @@ a:hover {
     gap: 20px;
     overflow-y: auto;
     overflow-x: hidden;
+    -ms-overflow-style: none; 
+    scrollbar-width: none;
 }
+
+#pack::-webkit-scrollbar {
+    display: none;
+}
+
 
 menu { 
     position: fixed;
@@ -492,12 +503,13 @@ menu {
 .button {
     padding: 20px;
     background-color: #c6a679;
-    border: 2px black solid;
+    border: 2px rgb(255, 255, 255) solid;
     border-radius: 10px;
     color: black;
     font-size: 20px;
     font-variant: small-caps;
     font-weight: 500;
+    text-align: center;
 }
 
 @media screen and (max-width: 1023px) {
@@ -614,7 +626,10 @@ menu {
     }
 
     .button {
+        position: relative;
         border-radius: 0px;
+        padding: 5px;
+        margin-top: 30px;
     }
 
 }
