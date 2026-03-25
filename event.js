@@ -6,7 +6,7 @@ menubtn.addEventListener("click", function(event) {
         <ul>
             <li><a href="./index.html">Home</a></li>
             <li class="active">Events</li>
-            <li><a href="">Contact Us</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
         </ul>
     `;
     menubtn.classList.add("is-open");

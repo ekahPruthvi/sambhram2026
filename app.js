@@ -80,7 +80,7 @@ menubtn.addEventListener("click", function(event) {
         <ul class="bounce-animate>
             <li class="active">Home</li>
             <li><a href="./events.html">Events</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
         </ul>
     `;
     menubtn.classList.add("is-open");
