@@ -115,7 +115,7 @@ function openPopup(id) {
             </div>
 
             <div class="footer-info">
-                <span><strong>Reg Fee:</strong> ₹${details.Rfee}</span> | 
+                <span><strong>Reg Fee:</strong> ₹${details.Rfee}</span> <br>
                 <span><strong>Prize Pool:</strong> ₹${details.pool}</span>
             </div>
         `;

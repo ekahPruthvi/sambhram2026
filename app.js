@@ -37,7 +37,7 @@ function setAnimationScroll () {
         ])
     } else {
         runAnimation.add([
-            gsap.to("#sam", 10, {
+            gsap.to("#sam", 100, {
                 scale: 1.4,
                 x: -300,
                 y: 100,
@@ -59,10 +59,25 @@ function setAnimationScroll () {
                 x: -100,
                 y: 300
             }),
-            gsap.to("#bob", 20, {
+            gsap.to("#bob", 100, {
+                scale: 1,
                 opacity: 10,
-                y: -700
+                y: -800,
             })
+        ])
+        .add([
+            gsap.to("#tree", 100, {
+                opacity: 0
+            }),
+            gsap.to("#vangoh", 100, {
+                opacity: 0
+            }),
+            gsap.to("#musicdisk", 100, {
+                opacity: 0
+            }),
+            gsap.to("#piano", 100, {
+                opacity: 0
+            }),
         ]);
     }
 }
