@@ -33,7 +33,6 @@ function setAnimationScroll () {
             gsap.to("#bob", 20, {
                 opacity: 10,
                 y: -700,
-                scale: 1,
             })
         ])
     } else {

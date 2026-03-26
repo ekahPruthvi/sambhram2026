@@ -358,7 +358,8 @@ a:hover {
 .inner-card {
     height: auto;
     width: 15vw;
-    padding: 10px;
+    padding: 30px;
+    background-color: #0000007d;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border-radius: 20px;
@@ -595,6 +596,7 @@ menu {
 
     .bob {
         font-size: 1.5em;
+        scale: 1;
     } 
 
     .abt {
