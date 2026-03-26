@@ -94,11 +94,10 @@ function openPopup(id) {
 
         pack.innerHTML = `
             <img src="${card.img}">
-            <div class="button">registrations opening soon</div>
         `
 
         popContent.innerHTML = `
-            <h2>${card.name}</h2>
+            <h1>${card.name}</h1>
             
             <div class="popup-section">
                 <p><strong>Location & Details:</strong><br>${formattedTnL}</p>
@@ -118,6 +117,9 @@ function openPopup(id) {
                 <span><strong>Reg Fee:</strong> ₹${details.Rfee}</span> <br>
                 <span><strong>Prize Pool:</strong> ₹${details.pool}</span>
             </div>
+
+
+            <div class="button">registrations opening soon</div>
         `;
         
     } else {
