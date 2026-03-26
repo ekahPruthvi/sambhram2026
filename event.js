@@ -20,10 +20,28 @@ window.addEventListener("click", function(event) {
 }); 
 
 var cards = [
-    { id: 1, name: "Dance", info: "Dance Dance bro danceee yeey", img: "./try.jpg" },
-    { id: 2, name: "Bob sings", info: "Singer can sing like a singing silkman as he is a singer", img: "" },
-    { name: "Chiga", info: "Brothers of the flame can majestry ", img: "./try.jpg" },
-    { name: "Bob sings", info: "Singer can sing like a singing silkman as he is a singer", img: "./try.jpg" },
+    { id: 1, name: "Western Solo Dance", info: "Western Solo dance", img: "./img/westernsolodance.png" },
+    { id: 2, name: "Nrityanjali", info: "classical solo dance", img: "./img/nrityanjali.png" },
+    { id: 3, name: "Laya", info: "Group dance", img: "./img/groupdance.png" },
+    { id: 4, name: "Euphony", info: "Western Solo singing", img: "./img/euphony.png" },
+    { id: 5, name: "Valorant", info: "Valorant", img: "./img/valo.png" },
+    { id: 6, name: "BGMI", info: "BGMI", img: "./img/bgmi.png" },
+    { id: 7, name: "Hogathon", info: "Fiest-fiesta", img: "./img/hogathon.png" },
+    { id: 8, name: "Shooting", info: "Shooting", img: "./img/shooting.png" },
+    { id: 8, name: "The Hidden Manuscript", info: "Literary escape room", img: "./img/hiddenmanu.png" },
+    { id: 9, name: "BGMI", info: "BGMI", img: "./img/bgmi.png" },
+    { id: 10, name: "Roast Riot", info: "Rap battle", img: "./img/rapbat.png" },
+    { id: 11, name: "Fifa", info: "Fifa", img: "./img/fifa.png" },
+    { id: 12, name: "The spotlight", info: "monologue", img: "./img/spotlight.png" },
+    { id: 13, name: "Step clash", info: "1v1 dance challenge", img: "./img/stepclash.png" },
+    { id: 14, name: "Style Sync", info: "Duet Walk", img: "./img/stylesync.png" },
+    { id: 15, name: "Beat storm", info: "Battle of the bands", img: "./img/beatstorm.png" },
+    { id: 16, name: "Tarang", info: "Solo Instrumental", img: "./img/tarang.png" },
+    { id: 17, name: "Midninght Verdict", info: "Murder Mystery", img: "./img/midver.png" },
+    { id: 18, name: "Reflections", info: "Mobile and Camera Photography", img: "./img/reflections.png" },
+    { id: 19, name: "Squid Games", info: "Squid Games", img: "./img/squidgames.png" },
+    { id: 20, name: "Among Us", info: "Among Us", img: "./img/amongus.png" },
+    
 ];
 
 var popDesc = [
