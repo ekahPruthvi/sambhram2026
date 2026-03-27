@@ -166,26 +166,26 @@ var popDesc = [
     TnL: "23 April 2026, 3:00 PM - 5:00 PM | RVITM",
     Abt: "Among Us In Real Life (IRL) transforms the popular digital deduction game into an immersive, high-stakes physical experience where players are divided into two secret teams: Crewmates and Impostors. While the Crewmates navigate the venue to complete tangible 'tasks'—like sorting items or solving quick puzzles—the Impostors must blend in, faking their productivity while strategically 'eliminating' players using silent signals or kill cards. The atmosphere stays tense as players constantly watch their backs, trying to finish their objective list before the Impostors outnumber the living crew. The heart of the game lies in the Emergency Meetings, triggered whenever a 'body' is discovered or a meeting is called. During these high-pressure discussions, players must use logic, observation, and social cues to identify the traitors among them, while the Impostors use deception to shift the blame onto others. To keep the game fair and fun, strict rules of silence are enforced for 'ghosts' (eliminated players), and a central moderator often acts as the final judge. It’s a thrilling test of teamwork, survival, and your ability to spot a lie in real-time",
     Si: `• 1. The Moderator’s Word
-    |* The "Ref" is Law: The Game Lead (Moderator) has the final say on all disputes. No appeals, no arguments. If a call is made, the game continues immediately.
-    |* No Meta-Gaming: Do not use outside information (e.g., "I heard his shoes squeak in the kitchen"). Only discuss in-game actions.
+    |&nbsp;*&nbsp; The "Ref" is Law: The Game Lead (Moderator) has the final say on all disputes. No appeals, no arguments. If a call is made, the game continues immediately.
+    |&nbsp;*&nbsp; No Meta-Gaming: Do not use outside information (e.g., "I heard his shoes squeak in the kitchen"). Only discuss in-game actions.
     ||• 2. The Kill Protocol (The "Card" System)
-    |* The Silent Kill: To eliminate a Crewmate, the Impostor must secretly show them a Red Kill Card.
-    |* Zero Resistance: If you are shown the card, you are dead. You cannot run away or "dodge" it once the card is visible.
-    |* The Ghost Vow: Once killed, you must sit or lay down exactly where you died. You are strictly forbidden from speaking, gesturing, or making noise until a body is reported.
+    |&nbsp;*&nbsp; The Silent Kill: To eliminate a Crewmate, the Impostor must secretly show them a Red Kill Card.
+    |&nbsp;*&nbsp; Zero Resistance: If you are shown the card, you are dead. You cannot run away or "dodge" it once the card is visible.
+    |&nbsp;*&nbsp; The Ghost Vow: Once killed, you must sit or lay down exactly where you died. You are strictly forbidden from speaking, gesturing, or making noise until a body is reported.
     ||• 3. Reporting & Meetings
-    |* Reporting a Body: To report a "dead" player, you must shout "BODY" loudly. All players must immediately stop moving and go to the designated Meeting Area.
-    |* Emergency Meetings: Each player gets one Emergency Meeting button press per game. Use it wisely.
-    |* Meeting Conduct: Only one person speaks at a time. Shouting over others results in an immediate skip of your vote.
+    |&nbsp;*&nbsp; Reporting a Body: To report a "dead" player, you must shout "BODY" loudly. All players must immediately stop moving and go to the designated Meeting Area.
+    |&nbsp;*&nbsp; Emergency Meetings: Each player gets one Emergency Meeting button press per game. Use it wisely.
+    |&nbsp;*&nbsp; Meeting Conduct: Only one person speaks at a time. Shouting over others results in an immediate skip of your vote.
     ||• 4. Voting & Ejection
-    |* Evidence Required: You must provide a reason for your suspicion. "Just a vibe" is not enough to force an ejection.
-    |* The Final Vote: On the count of three, everyone points at their suspect. The person with the most votes is ejected and becomes a Ghost.
-    |* Tie Vote: In the event of a tie, no one is ejected, and the game resumes.
+    |&nbsp;*&nbsp; Evidence Required: You must provide a reason for your suspicion. "Just a vibe" is not enough to force an ejection.
+    |&nbsp;*&nbsp; The Final Vote: On the count of three, everyone points at their suspect. The person with the most votes is ejected and becomes a Ghost.
+    |&nbsp;*&nbsp; Tie Vote: In the event of a tie, no one is ejected, and the game resumes.
     ||• 5. Task Integrity
-    |* Do Not Fake Tasks: Crewmates must actually complete their assigned tasks (e.g., sorting items, filling water).
-    |* Ghost Tasks: Dead Crewmates must still complete their tasks to help the team win. They must do so in total silence.
+    |&nbsp;*&nbsp; Do Not Fake Tasks: Crewmates must actually complete their assigned tasks (e.g., sorting items, filling water).
+    |&nbsp;*&nbsp; Ghost Tasks: Dead Crewmates must still complete their tasks to help the team win. They must do so in total silence.
     ||• 6. Safety & Boundaries
-    |* No Physical Contact: No pushing, grabbing, or tackling. The game is won through stealth and logic, not athletics.
-    |* Off-Limit Zones: Stay within the agreed boundaries. Entering a "Dead Zone" (like a bathroom) results in an automatic ejection. 
+    |&nbsp;*&nbsp; No Physical Contact: No pushing, grabbing, or tackling. The game is won through stealth and logic, not athletics.
+    |&nbsp;*&nbsp; Off-Limit Zones: Stay within the agreed boundaries. Entering a "Dead Zone" (like a bathroom) results in an automatic ejection. 
     `,
     gi: "N/A",
     Rfee: 100,
@@ -218,17 +218,17 @@ declared the winner.|• The teams must enter the rooms on their designated team
 provided by the organizers.|• Emulators, tablets, and iPads are not allowed. Only Android and
 iOS phones are permitted.|• Teams must carry their own required equipment (power banks,
 chargers, etc.)|• Screenshot Submission: After completing each match, teams must
-share a screenshot of the total score with the coordinator||| PointSystem: |* 1st Place -> 10 points
-|* 2nd Place-> 6 points
-|* 3rd Place-> 5 points
-|* 4th Place-> 4 points
-|* 5th Place-> 3 points
-|* 6th Place-> 2 points
-|* 7th Place-> 1 point
+share a screenshot of the total score with the coordinator||| PointSystem: |&nbsp;*&nbsp; 1st Place -> 10 points
+|&nbsp;*&nbsp; 2nd Place-> 6 points
+|&nbsp;*&nbsp; 3rd Place-> 5 points
+|&nbsp;*&nbsp; 4th Place-> 4 points
+|&nbsp;*&nbsp; 5th Place-> 3 points
+|&nbsp;*&nbsp; 6th Place-> 2 points
+|&nbsp;*&nbsp; 7th Place-> 1 point
 
-|* 8th Place-> 1 point
-|* 9th Place-> 0 points
-|* Each kill =1 point`,
+|&nbsp;*&nbsp; 8th Place-> 1 point
+|&nbsp;*&nbsp; 9th Place-> 0 points
+|&nbsp;*&nbsp; Each kill =1 point`,
     gi: "• Check-In: Teams must check in at the venue 15 minutes before the event.|• Registration details will be verified.|• Standard rules apply.|• Scoring: Points will be awarded based on placement and kills.|• Final rankings will be decided on cumulative points.|• Tiebreakers: | 1.The team with more Chicken Dinners ranks higher. | 2.If still tied, the team with more placement points ranks higher. | 3.If still tied, a Team Deathmatch will decide the winner.",
     Rfee: 400,
     pool: 4000,
@@ -241,16 +241,16 @@ share a screenshot of the total score with the coordinator||| PointSystem: |* 1s
     Si: `•No accompanists are allowed.
 |• Songs must be in MP3 format and uploaded to a designated Google Drive folder at least 2 days before the event. The folder link will be shared after registration.
 |• Duration: Maximum of 6 minutes allowed:
-| * 5 minutes – Performance
-| * 1 minute – Set up and clearance time
+| &nbsp;*&nbsp; 5 minutes – Performance
+| &nbsp;*&nbsp; 1 minute – Set up and clearance time
 |• Performance must be based on any of the 7 Classical Indian Dance Forms:
-| * Bharatanatyam
-| * Kathak
-| * Kuchipudi
-| * Kathakali
-| * Mohiniattam
-| * Manipuri
-| * Odissi
+| &nbsp;*&nbsp; Bharatanatyam
+| &nbsp;*&nbsp; Kathak
+| &nbsp;*&nbsp; Kuchipudi
+| &nbsp;*&nbsp; Kathakali
+| &nbsp;*&nbsp; Mohiniattam
+| &nbsp;*&nbsp; Manipuri
+| &nbsp;*&nbsp; Odissi
 |• Use of movie songs is strictly prohibited.
     `,
     gi: "• Decision of the judges will be final and binding.|• Participants are requested to report 1 hour before the commencement of the event.|• No refunds will be given under any circumstance. ",
@@ -272,10 +272,10 @@ Step into a vibrant space where creativity meets skill, and every stroke tells a
 |• No assistance will be provided by coordinators or outsiders during the process. 
 |• Only free-hand painting is permitted; stencils or templates are not allowed.
 ||• PARTICIPANT REQUIREMENTS: 
-| * Participants may compete individually or with a partner (as their model). 
-| * All participants must carry their own makeup/painting items and tools—none will be provided at the venue. 
-| * Participants must be physically present; no remote participation is allowed. 
-| * Each participant is responsible for ensuring their materials are safe for skin use. 
+| &nbsp;*&nbsp; Participants may compete individually or with a partner (as their model). 
+| &nbsp;*&nbsp; All participants must carry their own makeup/painting items and tools—none will be provided at the venue. 
+| &nbsp;*&nbsp; Participants must be physically present; no remote participation is allowed. 
+| &nbsp;*&nbsp; Each participant is responsible for ensuring their materials are safe for skin use. 
 `,
     gi: `• Decision of the judges will be final and binding. 
 |• Participants are requested to report 30 mins before the event begins. 
