@@ -111,6 +111,24 @@ var popDesc = [
     Rfee: 200,
     pool: 2000,
   },
+  {
+  id: 1,
+  TnL: "23 April 2026, 12:30 PM – 2:30 PM | RVITM, MCA Seminar Hall",
+  Abt: "Immerse yourself in the rhythm of time as our event, Footprints in Time takes you on a journey through movement and expression. From timeless elegance to modern energy, every step captures a story, blending past and present in a dynamic celebration of dance.",
+  Si: "• The total performance duration is 3+1 minutes (3 minutes for performance, 1 minute for setup and clearance).|• Performances must not include sensitive topics such as religion, politics, or social controversies.|• Exceeding the time limit will result in point deductions.|• The use of hazardous props, including sharp objects, flammable materials, or any items that could cause injury, is strictly prohibited.|• Participants must maintain professional conduct both backstage and during the event.|• All participants must show respect towards fellow performers, judges, and event organizers, ensuring a positive and inclusive environment.|• Rule violations may result in immediate disqualification.|• Music tracks for the performance must be submitted at least five days before the event in MP3 format.|• Participants must bring their own costumes, props, and accessories.|• All participants must adhere to the rules set by the organising committee, and any violations may result in penalties or disqualification.|• Accompanists are not permitted; performances must be solo.|• Backdrop requirements: Video backdrops must be in MP4 format; photo backdrops must be in PDF or PPT format; all backdrops must be in landscape mode.|• Any specific lighting requirements must be communicated to the event coordinators in advance.",
+  gi: "• Decision of the judges will be final and binding.|• Participants are requested to report 1 hour before the commencement of the event.|• No refunds will be given under any circumstance.",
+  Rfee: 200,
+  pool: 2500
+},
+  {
+  id: 21,
+  TnL: "23 April 2026, 12:30 PM – 2:30 PM | RVITM, 6th Floor Seminar Hall",
+  Abt: "Step onto the stage and let the beauty of your voice fill the hall in this grand celebration of classical music! Whether you are performing a graceful Mozart aria or a moving piece of Italian art song, this is your chance to show the power of pure, natural singing. Focus on every clear note and every heartfelt phrase as you bring the works of great composers to life with your own unique style. From the quietest whisper to the most soaring melody, your goal is to connect with the audience through your skill and passion. This is more than just a contest; it is a moment to honor tradition and share your talent with the world. Take a deep breath, find your center, and let your music leave a lasting impression on everyone who hears it.",
+  Si: "• Time Limit for each performance is limited to 5+1 minutes (5 minutes for singing, 1 minute for setup/transition).|• Maximum of 2 accompanists are allowed for each participant.|• Songs must be Hindustani or Carnatic and must be in an Indian language with appropriate lyrics.|• Instruments will not be provided by the host college.|• Any special technical requirements for instruments must be communicated to event coordinators in advance.|• Karaoke or backing tracks are allowed, but must be uploaded to the provided Drive link. Participants must also bring a backup on a pen drive.|• Shruti box is allowed for accompaniment during the performance.|• The competition will be held in a single round only.",
+  gi: "• The decision of the judges will be final and binding.|• Participants must report 1 hour before the event starts. Latecomers may not be allowed to participate.|• No refunds will be given under any circumstances.",
+  Rfee: 200,
+  pool: 2500
+},
   
   {
     id: 4,
@@ -122,6 +140,7 @@ var popDesc = [
     pool: 2500,
   },
 
+
   {
     id: 5,
     TnL: "23 April 2026, 12:30 PM – 6:30 PM | RVITM, Lab",
@@ -131,6 +150,15 @@ var popDesc = [
     Rfee: 500,
     pool: 5000,
   },
+  {
+  id: 4,
+  TnL: "23 April 2026, 3:00 PM – 5:00 PM | RVITM, 6th Floor Seminar Hall",
+  Abt: "It's time to claim the mic and let your vocal prowess take center stage in our highly anticipated solo vocal showdown! Whether you plan to bring the house down with a high-octane pop hit or move the room to tears with a breathtaking acoustic melody, we want to see you mesmerize the audience with your authentic flair. We welcome tracks from every genre—this is your blank canvas to paint with your own unique musical signature. Connect deeply with the lyrics, let the beat drive you, and deliver a performance that gives the crowd chills. Battle it out to be crowned this year's top vocal powerhouse in an event where pure talent meets untamed emotion. The stage is set—grab your chance to make history!",
+  Si: "• Time Limit for each performance is limited to 3+1 minutes (3 minutes for singing, 1 minute for setup/transition).|• An accompanist is allowed along with the participant.|• Participants may play their own instruments while singing. Instruments will not be provided by the host college.|• Any special technical requirements for instruments must be communicated to event coordinators in advance.|• Karaoke or backing tracks are allowed, but must be uploaded to the provided Drive link. Participants must also bring a backup on a pen drive.|• The competition will be held in a single round only.",
+  gi: "• The decision of the judges will be final and binding.|• Participants must report 1 hour before the event starts. Latecomers may not be allowed to participate.|• No refunds will be given under any circumstances.",
+  Rfee: 200,
+  pool: 2500
+},
 
   {
     id: 14,
@@ -141,6 +169,15 @@ var popDesc = [
     Rfee: 1500,
     pool: 9000,
   },
+  {
+  id: 12,
+  TnL: "24 April 2026, 9:30 AM – 12:00 PM | RVITM, 1st Floor Seminar Hall",
+  Abt: "Step into the spotlight and command the stage with the power of your words in this captivating monologue competition! This event celebrates the art of storytelling, emotion, and dramatic expression through solo performance. Whether you bring to life a powerful character, narrate a gripping story, or express deep emotions through a self-written piece, this is your chance to mesmerize the audience with your voice, expressions, and presence. From intense drama to light-hearted humour, let your performance leave a lasting impact. Channel your creativity, embody your character, and take the audience on an unforgettable journey through your words. Compete for the prestigious title of ultimate performer, where passion, creativity, and expression collide. This is your moment to shine!",
+  Si: "• Time Limit for each performance is limited to 3+2 minutes (3 minutes for performance, 2 minutes for setup/transition).|• The monologue can be original or adapted from any source (movies, plays, literature, etc.).|• Use of minimal props is allowed. Participants must bring their own props if required.|• Background music or sound effects are allowed but must be submitted in advance and brought as backup.|• Offensive, vulgar, or inappropriate content will lead to disqualification.|• Participants must perform solo. No assistance or supporting actors allowed on stage.|• The competition will be conducted in 1 round.",
+  gi: "• The decision of the judges will be final and binding.|• Participants must report 15 minutes before the event starts. Latecomers may not be allowed to participate.|• No refunds will be given under any circumstances.",
+  Rfee: 150,
+  pool: 2000
+},
 
   {
     id: 3,
@@ -192,6 +229,15 @@ var popDesc = [
     Rfee: 100,
     pool: 3000,
   },
+  {
+  id: 19,
+  TnL: "24 April 2026, 1:00 PM onwards | RVITM, Football Turf/Basketball Court",
+  Abt: "Step into a world where childhood nostalgia meets high-stakes survival. The Squid Game Challenge is an immersive, elimination-based gauntlet that tests your agility, nerves, and strategy. Divided into iconic rounds of play, individuals must navigate a series of traditional games with a modern, competitive twist to emerge as the ultimate survivor.",
+  Si: "• Absolute Compliance: All instructions from the Frontman and the Guards (Circle, Triangle, Square) are final. Failure to follow a command results in instant elimination.|• Solo Performance: While you may be surrounded by other players, no physical pushing or verbal abuse is permitted. Any attempt to sabotage another player will lead to disqualification for both parties.|• No External Tools: Use of mobile phones, smartwatches, or outside tools is strictly prohibited during the trials.|• Elimination: If a player fails a task or is caught moving during a 'Red Light' phase, they will be eliminated and must leave the arena immediately.",
+  gi: "• Players must report to the venue at least 25-30 minutes before their assigned time slot.|• Listen carefully to the briefing instructions before entering the room.|• Do not interfere in another's gameplay. Any form of cheating or rule violation will result in immediate disqualification.",
+  Rfee: 100,
+  pool: 1500
+},
   
   {
     id: 15,
@@ -396,7 +442,16 @@ commencement of the event.
 |• No refunds will be given under any circumstance.`,
     Rfee: 200,
     pool: 3000,
-  }
+  },
+  {
+  id: 7,
+  TnL: "24 April 2026, 8:00 AM – 6:00 PM | RVITM, Basement",
+  Abt: "Step up, take aim, and feel the rush. Shooting, one of the most anticipated events at Sambhram, RVITM's flagship fest, puts you behind the sights of a 10-meter range and challenges you to find your focus under pressure. It doesn't matter if you've never held a gun before or if you're a seasoned marksman — this is your chance to test your nerves, sharpen your concentration, and discover what you're made of. With a professional setup designed for both safety and excitement, Shooting promises an experience that's equal parts intense and unforgettable.",
+  Si: "• Format: Each participant gets a fixed number of shots per round. The number of rounds (prelims, semis, finals) will be determined based on total participation and the Range Officer's discretion.|• Scoring: Target sheets are scored out of 100 based on standard 10-meter air rifle scoring rings. The score of each shot is determined by whichever ring the pellet lands on, and all shots are cumulated for a final score. Participants are ranked on a live leaderboard based on their cumulative score. The highest scorer wins.|• Muzzle Discipline: Rifles must always be pointed downrange at all times, no exceptions.|• Loading Protocol: Participants must not load the rifle until explicitly commanded to do so by the Range Officer.|• Footwear: Closed footwear is mandatory on the range. Participants in open footwear will not be permitted to shoot.|• Safety Commands: All participants must follow range commands promptly and precisely. Hesitation or non-compliance may result in disqualification.|• Immediate Disqualification: Any breach of fundamental weapon safety — including pointing the muzzle in an unsafe direction or loading without command — will result in instant disqualification with no appeal.|• Bystander Conduct: Spectators and accompanying individuals must remain behind the designated safety line at all times. Interference may lead to the participant's disqualification.|• Range Officer Authority: All decisions made by the Range Officer regarding safety, scoring, and conduct are final and non-negotiable.",
+  gi: "• The decision of the judges/Range Officer will be final and binding.|• Participants must report on time to their assigned slot.|• No refunds will be given under any circumstances.",
+  Rfee: 200,
+  pool: 2500
+}
 
 ];
 
