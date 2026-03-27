@@ -683,9 +683,11 @@ menu {
     }
 
     .inner-card {
-        background: radial-gradient(125% 125% at 50% 10%, #00000048 40%, rgba(48, 48, 48, 0.598) 100%);
+        background: radial-gradient(80% 125% at 20% 5%, #000000b7 20%, rgba(48, 48, 48, 0.598) 100%);
         width: 100%;
         border-radius: 20px;
+        backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
     }
 
     .loadimg {
