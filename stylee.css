@@ -421,8 +421,6 @@ menu {
         max-height: 50vh;
     }
 
-    
-
 }
 #bg_city {
     width: 100%;
@@ -523,10 +521,4 @@ a:hover {
     .contact-box h1 {
         font-size: 2.5em;
     }
-
-    .contact-box {
-        width: 100vw;
-        height: 100vh;
-    }
-    
 }
