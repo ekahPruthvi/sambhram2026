@@ -28,7 +28,7 @@ var cards = [
   },
   {
     id: 2,
-    name: "Nrityanjali",
+    name: "Monogroove",
     info: "classical solo dance",
     img: "./img/nrityanjali.png",
   },
@@ -116,7 +116,7 @@ var popDesc = [
   id: 1,
   TnL: "23 April 2026, 12:30 PM – 2:30 PM | RVITM, MCA Seminar Hall",
   Abt: "Immerse yourself in the rhythm of time as our event, Footprints in Time takes you on a journey through movement and expression. From timeless elegance to modern energy, every step captures a story, blending past and present in a dynamic celebration of dance.",
-  Si: "• The total performance duration is 3+1 minutes (3 minutes for performance, 1 minute for setup and clearance).|• Performances must not include sensitive topics such as religion, politics, or social controversies.|• Exceeding the time limit will result in point deductions.|• The use of hazardous props, including sharp objects, flammable materials, or any items that could cause injury, is strictly prohibited.|• Participants must maintain professional conduct both backstage and during the event.|• All participants must show respect towards fellow performers, judges, and event organizers, ensuring a positive and inclusive environment.|• Rule violations may result in immediate disqualification.|• Music tracks for the performance must be submitted at least five days before the event in MP3 format.|• Participants must bring their own costumes, props, and accessories.|• All participants must adhere to the rules set by the organising committee, and any violations may result in penalties or disqualification.|• Accompanists are not permitted; performances must be solo.|• Backdrop requirements: Video backdrops must be in MP4 format; photo backdrops must be in PDF or PPT format; all backdrops must be in landscape mode.|• Any specific lighting requirements must be communicated to the event coordinators in advance.",
+  Si: "• The total performance duration is 3+1 minutes (3 minutes for performance, 1 minute for setup and clearance).|• Performances must not include sensitive topics such as religion, politics, or social controversies.|• Exceeding the time limit will result in point deductions.|• The use of hazardous props, including sharp objects, flammable materials, or any items that could cause injury, is strictly prohibited.|• Participants must maintain professional conduct both backstage and during the event.|• All participants must show respect towards fellow performers, judges, and event organizers, ensuring a positive and inclusive environment.|• Rule violations may result in immediate disqualification.|• Music tracks for the performance must be submitted in MP3 format.|• Participants must bring their own costumes, props, and accessories.|• All participants must adhere to the rules set by the organising committee, and any violations may result in penalties or disqualification.|• Accompanists are not permitted; performances must be solo.|• Backdrop requirements: Video backdrops must be in MP4 format; photo backdrops must be in PDF or PPT format; all backdrops must be in landscape mode.|• Any specific lighting requirements must be communicated to the event coordinators in advance.",
   gi: "• Decision of the judges will be final and binding.|• Participants are requested to report 1 hour before the commencement of the event.|• No refunds will be given under any circumstance.",
   Rfee: 200,
   pool: 2500
@@ -162,7 +162,7 @@ var popDesc = [
 
   {
   id: 19,
-  TnL: "24 April 2026, 1:00 PM onwards | RVITM, Football Turf/Basketball Court",
+  TnL: "24 April 2026, 1:00 PM onwards | RVITM",
   Abt: "Step into a world where childhood nostalgia meets high-stakes survival. The Squid Game Challenge is an immersive, elimination-based gauntlet that tests your agility, nerves, and strategy. Divided into iconic rounds of play, individuals must navigate a series of traditional games with a modern, competitive twist to emerge as the ultimate survivor.",
   Si: "• Absolute Compliance: All instructions from the Frontman and the Guards (Circle, Triangle, Square) are final. Failure to follow a command results in instant elimination.|• Solo Performance: While you may be surrounded by other players, no physical pushing or verbal abuse is permitted. Any attempt to sabotage another player will lead to disqualification for both parties.|• No External Tools: Use of mobile phones, smartwatches, or outside tools is strictly prohibited during the trials.|• Elimination: If a player fails a task or is caught moving during a 'Red Light' phase, they will be eliminated and must leave the arena immediately.",
   gi: "• Players must report to the venue at least 25-30 minutes before their assigned time slot.|• Listen carefully to the briefing instructions before entering the room.|• Do not interfere in another's gameplay. Any form of cheating or rule violation will result in immediate disqualification.",
@@ -186,7 +186,7 @@ var popDesc = [
     Abt: "Step into the spotlight where attitude speaks louder than words and every step becomes a statement. Style sync is your chance to showcase creativity, coordination, and unmatched stage presence. Form your team. Design your theme. Walk with purpose. From bold street swagger to royal elegance, this stage is yours to express, impress, and dominate.",
     Si: "• The Performance duration is 8 minutes, with a 2 minute grace period.|• All outfits must be stylish, elegant, and appropriate for a public audience.|• Participants must maintain professionalism; any form of discrimination, offensive behaviour, or disrespect will lead to disqualification.|• Hazardous props such as sharp objects, flammable materials, or any item that could cause injury are strictly prohibited.|• Each team must consist of students from the same college, with a team size between 6 to 12 members.|• Teams must register before the deadline to be eligible for participation.|• Music tracks for the runway walk must be submitted to the organisers at least two days before the event.|• Each team is responsible for arranging their own costumes, props, and accessories.|• Participants must strictly follow the given time limits for their runway walks.|• Lighting requirements for the runway walk must be submitted in PDF form to the organisers at least two days before the event.",
     gi: "• The decision of the judges will be final and binding.|• Participants must report 3 hours before the event starts and must be ready 1 hour before their performance. Latecomers may not be allowed to participate.|• No refunds will be given under any circumstances.",
-    Rfee: 1500,
+    Rfee: 350,
     pool: 9000,
   },
 
@@ -360,7 +360,7 @@ to participate.
 
   {
     id: 6,
-    TnL: "23 April 2026, 12:30 PM - 2:30 PM | Classroom",
+    TnL: "23 April 2026, 12:30 PM - 2:30 PM | Drawing room",
     Abt: `Step into the arena where appetite meets the clock. The Hog-a-
 thon is a high-intensity, solo-survival eating challenge designed
 
@@ -578,17 +578,17 @@ positive note, demonstrating mutual respect.
     TnL: "23rd April 2026, 12:30 PM - 3:00 PM",
     Abt: `Step into a world where stories come alive and puzzles guard the way forward.
 The Literary Escape Room is an immersive challenge that blends literature,
-logic, and teamwork. Teams will decode clues, unravel narraƟves, and solve
-book-inspired mysteries to “escape” within the given Ɵme.
+logic, and teamwork. Teams will decode clues, unravel narratves, and solve
+book-inspired mysteries to “escape” within the given time.
 ||
-This event celebrates creaƟvity, criƟcal thinking, and a love for literature—
-tesƟng not just what you know, but how you think. With the seconds counƟng
+This event celebrates creativity, critical thinking, and a love for literature—
+testing not just what you know, but how you think. With the seconds counting
 down, will you find the missing ink before the final page is closed forever?
-ParƟcipate to find out!`,
-    Si: `• ParƟcipants must compete in teams (2–4 members per team).
+Participate to find out!`,
+    Si: `• Participants must compete in teams (2–4 members per team).
 |• Each team will be placed in a themed escape room based on literary
 works, authors, or genres.
-|• The Ɵme limit per team is five minutes.
+|• The time limit per team is five minutes.
 |• Clues may involve:
 | &nbsp;*&nbsp; Riddles based on famous books/quotes
 | &nbsp;*&nbsp; Word puzzles, anagrams, or codes
@@ -597,17 +597,17 @@ works, authors, or genres.
 |• Mobile phones, books, or any form of external assistance are strictly
 prohibited.
 |• All clues and objects in the room must be handled carefully—no forceful
-acƟons (breaking, tearing, etc.).
-|• The team that solves the mystery and escapes in the shortest Ɵme with
-the correct soluƟon will be declared the winner. All parƟcipants must
-follow the rules set by the Organising CommiƩee, and any violaƟons may
-lead to penalƟes or disqualificaƟon.`,
+actions (breaking, tearing, etc.).
+|• The team that solves the mystery and escapes in the shortest time with
+the correct solution will be declared the winner. All participants must
+follow the rules set by the Organising Commitiee, and any violations may
+lead to penalties or disqualification.`,
     gi: `|• Teams must report to the venue 2 hours before the event starts.
-|• Listen carefully to the briefing instrucƟons before entering the room.
+|• Listen carefully to the briefing instructions before entering the room.
 |• Respect the setup—this is a logic-based game, not a physical challenge.
 |• Do not interfere with another team’s gameplay.
-|• Any form of cheaƟng or rule violaƟon will result in immediate
-disqualificaƟon.
+|• Any form of cheating or rule violation will result in immediate
+disqualification.
 |• No refunds will be given under any circumstances.`,
     Rfee: 300,
     pool: 2000 - 1000,
