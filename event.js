@@ -1,3 +1,19 @@
+window.onload = function() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const action = urlParams.get('action');
+  if (action === 'amon') {
+    openPopup(20);
+  } else if (action === 'squ') {
+    openPopup(19);
+  } else if (action === 'valo') {
+    openPopup(5);
+  } else if (action === 'roast') {
+    openPopup(10);
+  } else if (action === 'mid') {
+    openPopup(17);
+  } 
+};
+
 const menubtn = document.getElementById("menu");
 
 menubtn.addEventListener("click", function (event) {
