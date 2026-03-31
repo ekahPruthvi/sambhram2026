@@ -256,7 +256,41 @@ var popDesc = [
     Rfee: 100,
     pool: 3000,
   },
-  
+
+  {
+    id: 7,
+    TnL: "24th April 2026, 8:00 AM - 6:00 PM | Basement",
+    Abt: `Step up, take aim, and feel the rush. Shooting, one of the most anticipated events at
+Sambhram, RVITM's flagship fest, puts you behind the sights of a 10-meter range and
+challenges you to find your focus under pressure. It doesn't matter if you've never held a gun
+before or if you're a seasoned marksman — this is your chance to test your nerves, sharpen
+your concentration, and discover what you're made of. With a professional setup designed
+for both safety and excitement, Shooting promises an experience that's equal parts intense
+and unforgettable.`,
+    Si: `• Format: Each participant gets a fixed number of shots per round. The number of rounds
+(prelims, semis, finals) will be determined based on total participation and the Range
+Officer's discretion.
+||• Scoring: Target sheets are scored out of 100 based on standard 10-meter air rifle scoring
+rings. The score of each shot is determined by whichever ring the pellet lands on, and all
+shots are cumulated for a final score. Participants are ranked on a live leaderboard based on
+their cumulative score. The highest scorer wins.`,
+    gi: `• Muzzle Discipline: Rifles must always be pointed downrange, at all times, no exceptions.
+Loading Protocol: Participants must not load the rifle until explicitly commanded to do so by
+the Range Officer.
+|• Footwear: Closed footwear is mandatory on the range. Participants in open footwear will not
+be permitted to shoot.
+|• Safety Commands: All participants must follow range commands promptly and precisely.
+Hesitation or non-compliance may result in disqualification.
+|• Immediate Disqualification: Any breach of fundamental weapon safety — including
+pointing the muzzle in an unsafe direction or loading without command — will result in
+instant disqualification with no appeal.
+|• Bystander Conduct: Spectators and accompanying individuals must remain behind the
+designated safety line at all times. Interference may lead to the participant's disqualification.
+|• Range Officer Authority: All decisions made by the Range Officer regarding safety, scoring,
+and conduct are final and non-negotiable.`,
+    Rfee: "200",
+    pool: "2500",
+  },
 
   {
     id: 9,
