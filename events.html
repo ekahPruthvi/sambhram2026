@@ -27,7 +27,7 @@
     );
 
   background-size: var(--s) var(--s);height: 100vh; display: flex;flex-direction: column;}
-        .search{margin:2rem auto 0;margin-bottom: 10vh; max-width:28rem;display:flex;align-items:center;gap:.75rem;background:#000000;border:1px solid hsl(0, 0%, 27%);border-radius:20px;padding:.75rem 1rem;box-shadow:0 1px 3px hsl(220 20% 12%/.04);transition:box-shadow .2s,border-color .2s}
+        .search{margin:2rem auto 0;margin-bottom: 10vh; min-width:100px;display:flex;align-items:center;gap:.75rem;background:#000000;border:1px solid hsl(0, 0%, 27%);border-radius:20px;padding:.75rem 1rem;box-shadow:0 1px 3px hsl(220 20% 12%/.04);transition:box-shadow .2s,border-color .2s}
         .search:focus-within{box-shadow:0 8px 24px hsl(220 20% 12%/.08);border-color:hsl(160,40%,42%)}
         .search svg{flex-shrink:0;color:hsl(220,10%,46%)}
         .search input{flex:1;border:none;outline:none;background:transparent;font-size:.9375rem;color:hsl(217, 27%, 66%);font-family:inherit}
@@ -59,6 +59,10 @@
             .grid {
                 max-width: 100vw;
             }
+
+            .search input {
+                width: 10%;
+            }
         }
     </style>
 </head>
@@ -83,8 +87,13 @@
     </div>
 
     <div class="search">
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
-      <input type="text" id="searchInput" placeholder="Search events" ></input>
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        <input type="text" id="searchInput" placeholder="Search events" ></input>
+        <select id="dateFilter" onchange="setDayFilter(this.value)">
+            <option value="">All Events</option>
+            <option value="23">April 23rd</option>
+            <option value="24">April 24th</option>
+        </select>
     </div>
 
     <div class="empty" id="empty">

@@ -571,6 +571,12 @@ menu {
     flex-grow: 1;
 }
 
+.filters{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
 .button {
     padding: 20px;
     background-color: #c6a679;

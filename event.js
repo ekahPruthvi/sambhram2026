@@ -36,17 +36,18 @@ window.addEventListener("click", function (event) {
 });
 
 var cards = [
-  {
-    id: 1,
-    name: "Monogroove",
-    info: "Western Solo dance",
-    img: "./img/westernsolodance.png",
-  },
+  
   {
     id: 2,
     name: "Nrityanjali",
     info: "classical solo dance",
     img: "./img/nrityanjali.png",
+  },
+  {
+    id: 1,
+    name: "Monogroove",
+    info: "Western Solo dance",
+    img: "./img/westernsolodance.png",
   },
   { id: 3, name: "Laya", info: "Group dance", img: "./img/groupdance.png" },
   {
@@ -702,38 +703,51 @@ var grid = document.getElementById("grid");
 var empty = document.getElementById("empty");
 var searchInput = document.getElementById("searchInput");
 
+let currentDay = ""; 
+
+function setDayFilter(day) {
+    currentDay = day;
+    render(searchInput.value); 
+}
+
 function render(filter) {
-  var q = (filter || "").toLowerCase();
-  var results = cards.filter(function (c) {
-    return (
-      c.name.toLowerCase().indexOf(q) !== -1 ||
-      c.info.toLowerCase().indexOf(q) !== -1
-    );
-  });
+    var q = (filter || "").toLowerCase();
 
-  grid.innerHTML = "";
+    var results = cards.filter(function (c) {
+        const details = popDesc.find((p) => p.id === c.id);
+        const tnlText = details ? details.TnL : "";
 
-  if (results.length === 0) {
-    empty.style.display = "block";
-    return;
-  }
+        const matchesSearch = c.name.toLowerCase().indexOf(q) !== -1 || 
+                              c.info.toLowerCase().indexOf(q) !== -1;
 
-  empty.style.display = "none";
+        const matchesDay = currentDay === "" || tnlText.trim().startsWith(currentDay);
 
-  results.forEach(function (card, i) {
-    var el = document.createElement("article");
-    el.className = "card";
-    el.style.animationDelay = i * 60 + "ms";
-    el.innerHTML = `
-        <div class="try" onclick="openPopup(${card.id})" style="background-image: url('${card.img}');">
-            <div class="inner-card">
-                <h1>${card.name}</h1>
-                <p>${card.info}</p>
+        return matchesSearch && matchesDay;
+    });
+
+    grid.innerHTML = "";
+
+    if (results.length === 0) {
+        empty.style.display = "block";
+        return;
+    }
+
+    empty.style.display = "none";
+
+    results.forEach(function (card, i) {
+        var el = document.createElement("article");
+        el.className = "card";
+        el.style.animationDelay = i * 60 + "ms";
+        el.innerHTML = `
+            <div class="try" onclick="openPopup(${card.id})" style="background-image: url('${card.img}');">
+                <div class="inner-card">
+                    <h1>${card.name}</h1>
+                    <p>${card.info}</p>
+                </div>
             </div>
-        </div>
-    `;
-    grid.appendChild(el);
-  });
+        `;
+        grid.appendChild(el);
+    });
 }
 
 searchInput.addEventListener("input", function (e) {
