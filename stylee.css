@@ -86,17 +86,41 @@ body {
 }
 
 footer {
-    height: 50vh;
+    min-height: 50vh;
     display: flex;
     flex-direction: column;
     z-index: 9999999;
     background-color: #000;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;    
 }
 
 .foot {
     padding: 50px;
     flex-grow: 1;
     font-size: 2.5vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.foot p{
+    flex-grow: 1;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.ico {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+
+.icons iframe {
+    flex-grow: 1;
 }
 
 footer img {
@@ -521,4 +545,13 @@ a:hover {
     .contact-box h1 {
         font-size: 2.5em;
     }
+
+    .foot {
+        flex-direction: column;
+    }
+
+    .icons {
+        align-items: center;
+    }
+
 }
