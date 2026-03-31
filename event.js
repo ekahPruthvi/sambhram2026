@@ -38,13 +38,13 @@ window.addEventListener("click", function (event) {
 var cards = [
   {
     id: 1,
-    name: "Western Solo Dance",
+    name: "Monogroove",
     info: "Western Solo dance",
     img: "./img/westernsolodance.png",
   },
   {
     id: 2,
-    name: "Monogroove",
+    name: "Nrityanjali",
     info: "classical solo dance",
     img: "./img/nrityanjali.png",
   },
@@ -82,7 +82,7 @@ var cards = [
   { id: 14, name: "Style Sync", info: "Duet Walk", img: "./img/stylesync.png" },
   {
     id: 15,
-    name: "Beat storm",
+    name: "BEATSTORM",
     info: "Battle of the bands",
     img: "./img/beatstorm.png",
   },
@@ -94,7 +94,7 @@ var cards = [
   },
   {
     id: 17,
-    name: "Midninght Verdict",
+    name: "Midnight Verdict",
     info: "Murder Mystery",
     img: "./img/midver.png",
   },
@@ -114,13 +114,13 @@ var cards = [
   { id: 21, name: "Dhwani", info:"Classical Solo singing", img: "./img/dhwani.png"},
   { id: 22, name: "Tinitique", info:"sketching or face canvas ", img: "./img/tinitique.png"},
   { id: 23, name: "Roots Unscripted", info:"Improv", img: "./img/rootsuns.png"},
-  { id: 24, name: "Group Fashion Walk", info: "", img: "./img/fashionwalk.png" }
+  { id: 24, name: "Rhythm Runway ", info: "Group Fashion Walk", img: "./img/fashionwalk.png" }
 ];
 
 var popDesc = [
   {
     id: 11,
-    TnL: "24 April 2026, 2:30 pm – 6:00 pm | RVITM, Chaithanya Layout, J. P. Nagar 8th Phase, Bengaluru, Karnataka 560076, India, MCA Seminar Hall",
+    TnL: "24 April 2026, 2:30 pm – 6:00 pm | RVITM",
     Abt: "Get ready to unleash your football skills in the most electrifying gaming competition of the fest! This year, we're bringing you the ultimate FIFA showdown, where precision, strategy, and mastery of the beautiful game will determine the champion. Whether you're a seasoned pro or a rising star, step onto the virtual pitch, outplay your opponents, and claim victory. Show us your dribbles, passes, and winning goals—because in this arena, only the best will emerge victorious!",
     Si: "• It is a solo event.|• No tech requirements are allowed.|• In case of a draw, the match will be played once again.|• The Tournament type will be Knockout Format - The player that wins will proceed to the next round.|• In case of an odd number of teams to conduct a tournament in knockout format, ‘BYE’ will be given at random and it will be decided by organisers using challonge.com.",
     gi: "• Please carry your college ID cards.|• The entry fee will not be refunded under any circumstances.|• All participants must register for the gaming event in advance.|• Participants should arrive at the specified location at least 30 minutes prior the event starts for check-in.|• Check-in will involve verifying registration details and assigning participants to their respective gaming stations.|• Respect all participants, organisers, and staff members. Harassment, bullying, or any form of disrespectful behaviour will not be tolerated.|• Maintain a positive and friendly atmosphere throughout the event. Follow the instructions of the event organisers at all times. Report any suspicious or unsafe behaviour to the event organisers immediately.|• Violation of any rules or code of conduct may result in penalties, disqualification, or removal from the event, depending on the severity of the offence.|• If anyone finds any Loophole, they are requested not to violate and argue for that and contact the organisers immediately. The decision will be taken accordingly.",
@@ -149,7 +149,7 @@ var popDesc = [
   
   {
     id: 5,
-    TnL: "23 April 2026, 12:30 PM – 6:30 PM | RVITM, Lab",
+    TnL: "23 April 2026, 12:30 PM – 6:30 PM | RVITM, Caed Lab",
     Abt: "Calling all VALORANT warriors and strategic masterminds! Gear up for an electrifying gaming experience where precision, teamwork, and quick reflexes reign supreme. Dive into adrenaline-pumping 5v5 battles, where every round counts and every play could be the game-changer. Whether you're a seasoned pro or a rising star, this is your stage to shine, outplay your opponents, and fetch your name in the annals of VALORANT glory. Join forces with allies, devise unbeatable strategies, and compete for the ultimate victory. Don't miss your chance to be part of an epic showdown filled with jaw-dropping moments and unforgettable memories. Register now and step into the arena where legends are born and greatness is achieved!",
     Si: "• Each team must have a team leader.|• The team leader will be responsible for effective communication between the organisers and the team for all the details.|• All members need not be present at the location, and members will be allowed to play from different locations.|• All team members should bring all their required equipment like laptops, headsets, mice, mouse pads, keyboards, etc.|• All the players must have a valid Valorant Account.|• The players must update the game beforehand as updates will not be allowed after reaching the tournament location.|• All the matches will be played on Mumbai server only.|• The Organising team will create the custom rooms for the matches.|• The Tournament type will be Knockout - The team that wins will proceed to the next round.|• The match-making of opponents will be random and will be decided by the organising team only.|• All the matches will be Best of One only.|• In case of an odd number of teams, 'BYE' will be given at random and decided by organisers using challonge.com.|• The Organising team will add the captains in the lobby and the captains should add the rest of the players.|• Only in-game voice chat should be used after the game is started till its completion.|• In-game cheats should not be turned on by any player.|• Maps: Haven, Bind, Split, Fracture, Icebox, Ascent, Pearl. 1st round - all teams play on the same map picked by organizers. 2nd stage - map selection via Map Ban method.|• All agents and weapons are allowed.|• The game ends once a team wins 13 rounds. In the event of a 12:12 tie, overtime will be enabled until one team has a 2 round lead.|• Substitution of any player will not be allowed after the tournament begins. Teams can change players before check-in.",
     gi: "• Participants are requested to report 1 hour before the commencement of the event.|• All participants must register for the gaming event in advance.|• Check-in will involve verifying registration details and assigning participants to their respective gaming stations.|• Respect all participants, organisers, and staff members. Harassment, bullying, or any form of disrespectful behavior will not be tolerated.|• Maintain a positive and friendly atmosphere throughout the event. Follow the instructions of the event organisers at all times.|• Cheating, exploiting glitches, or using unauthorised tools or software is strictly prohibited. No external support or coaching will be allowed during the game.|• Exiting a game without a proper reason will lead to disqualification of the team.|• Keep personal belongings secure. The organising committee is not responsible for any lost or stolen items.|• Violation of any rules or code of conduct may result in penalties, disqualification, or removal from the event.|• If anyone finds any loophole, they are requested not to violate it and contact the organisers immediately.|• All participants can play on their respective mobile networks or the Ethernet connection provided, but organisers are not responsible for ping issues.|• No refunds will be given under any circumstance.",
@@ -188,9 +188,9 @@ var popDesc = [
   
   {
     id: 15,
-    TnL: "24 April 2026, 9:30 A, - 12:00 PM | Auditorium",
+    TnL: "24 April 2026, 9:30 AM - 12:00 PM | RVITM, Auditorium",
     Abt: "Beatstorm is a live music showcase at Sambhram ’26 that brings together college bands for an evening centered around performance, creativity, and sound. Featuring a wide range of genres including rock, indie, metal, and fusion, the event highlights each band’s unique style, musicality, and stage presence. It is designed as a space where artists can present both original compositions and reinterpretations, creating a diverse and engaging listening experience. Set against a dynamic stage and a lively audience, Beatstorm focuses on the essence of live performance — energy, coordination, and connection. The event offers emerging musicians an opportunity to perform in a professional setup, interact with fellow artists, and leave a lasting impression through their music.",
-    Si: "• Team Size: 6-12 Members|• Participants must bring their own instruments.|• A 5-piece drum kit will be provided by the host college.|• In case of any special technical requirements, the event coordinators can be contacted.|• Open for all colleges, professional and semi-professional bands, but at least one member of the team must be currently pursuing their graduation|• Each participant is allowed to represent only one band.|• Songs with appropriate lyrics are to be chosen, and the lyrics sheet must be submitted prior to the performance for OCs.|• Time limit for the performance is 15 minutes, including setup, soundcheck, and clearance|• Only Indian languages and English songs can be performed.|• Originals will be given more weightage.|• Processed music and backing tracks are strictly not allowed.",
+    Si: "• Team Size: 3-8 Members|• Participants must bring their own instruments.|• A 5-piece drum kit will be provided by the host college.|• In case of any special technical requirements, the event coordinators can be contacted.|• Open for all colleges, professional and semi-professional bands, but at least one member of the team must be currently pursuing their graduation|• Each participant is allowed to represent only one band.|• Songs with appropriate lyrics are to be chosen, and the lyrics sheet must be submitted prior to the performance for OCs.|• Time limit for the performance is 15 minutes, including setup, soundcheck, and clearance|• Only Indian languages and English songs can be performed.|• Originals will be given more weightage.|• Processed music and backing tracks are strictly not allowed.",
     gi: "• The competition will be held in 1 round only.|• In case of special technical requirements for the instruments, event coordinators must be informed in advance.|• Participants are requested to report 2 hours before the commencement of the event.|• Judges’ decisions will be considered final and binding.",
     Rfee: 1500,
     pool: 9000,
@@ -198,12 +198,43 @@ var popDesc = [
   
   {
     id: 14,
-    TnL: "24 April 2026, 3:00 PM – 5:00 PM | RVITM, Auditorium",
-    Abt: "Step into the spotlight where attitude speaks louder than words and every step becomes a statement. Style sync is your chance to showcase creativity, coordination, and unmatched stage presence. Form your team. Design your theme. Walk with purpose. From bold street swagger to royal elegance, this stage is yours to express, impress, and dominate.",
-    Si: "• The Performance duration is 8 minutes, with a 2 minute grace period.|• All outfits must be stylish, elegant, and appropriate for a public audience.|• Participants must maintain professionalism; any form of discrimination, offensive behaviour, or disrespect will lead to disqualification.|• Hazardous props such as sharp objects, flammable materials, or any item that could cause injury are strictly prohibited.|• Each team must consist of students from the same college, with a team size between 6 to 12 members.|• Teams must register before the deadline to be eligible for participation.|• Music tracks for the runway walk must be submitted to the organisers at least two days before the event.|• Each team is responsible for arranging their own costumes, props, and accessories.|• Participants must strictly follow the given time limits for their runway walks.|• Lighting requirements for the runway walk must be submitted in PDF form to the organisers at least two days before the event.",
-    gi: "• The decision of the judges will be final and binding.|• Participants must report 3 hours before the event starts and must be ready 1 hour before their performance. Latecomers may not be allowed to participate.|• No refunds will be given under any circumstances.",
+    TnL: "24 April 2026, 12:30 PM – 2:30 PM | RVITM, Auditorium",
+    Abt: `Style Sync is a dynamic duet fashion walk event that celebrates creativity,
+coordination, and confidence. Designed for pairs who can match not just outfits
+but energy and attitude.
+From themed ensembles to bold storytelling through fashion, each duo will own
+the ramp with coordinated walks, striking poses, and captivating stage
+presence. Elegant or edgy, traditional or futuristic — there are no limits, only
+expression. Style Sync is your chance to stand out, sync up, and shine like never
+before!`,
+    Si: `• Performance Duration: 2 minutes + 1-minute grace period.
+|• Dress Code: Outfits must be stylish, tasteful, and appropriate for a public
+audience.
+|• Content Restrictions: Performances must not incorporate sensitive topics,
+including but not limited to religion, politics, or social controversies.
+|• Time Adherence: Exceeding the time limit will result in point deductions.
+|• Props & Safety: Hazardous props such as sharp objects, flammable
+materials, or any items that could cause injury are strictly prohibited.
+|• Professional Conduct: Participants must conduct themselves professionally
+both backstage and during the event.
+|• Respect & Inclusion: Discrimination or derogatory behavior towards other
+participants, judges, or organizers will not be tolerated.
+|• Disqualification Clause: Any rule violations may result in immediate
+disqualification.
+|• Team Composition: Each team must consist of two members who are
+students from the same college.
+|• Music Submission: Music tracks for the runway walk must be submitted at
+least 2 days prior to the event.
+|• Self-Sufficiency: Participants are responsible for bringing their own
+costumes, props, and accessories.
+|| Compliance: All participants must adhere to the rules set by the organizing
+committee. Any violations will be subject to penalties or disqualification`,
+    gi: `• The decision of the judges will be final and binding.
+|• Participants are required to report 2 hours before the commencement of the
+event.
+|• No refunds will be given under any circumstance.`,
     Rfee: 350,
-    pool: 9000,
+    pool: 2500,
   },
 
   {
@@ -218,7 +249,7 @@ var popDesc = [
 
   {
     id: 13,
-    TnL: "24 April 2026, 12:00 PM - 2:00 PM | Ground Floor",
+    TnL: "24 April 2026, 12:00 PM - 2:00 PM | RVITM, Ground Floor",
     Abt: "Unleash the rhythm within and command the spotlight in our premier one-on-one dance showdown! From deeply emotional, fluid contemporary routines to sharp, lightning-fast commercial combinations, bring your sheer passion to the floor and leave the audience mesmerized. Breathe life into the music across all genres, infusing every leap, lock, and transition with your distinct artistic vision. Allow the beat to take over, shattering expectations and telling a powerful story through your physical expression. Duel against top-tier talent to claim the crown as our next great dance visionary in a fierce contest of technique, emotion, and unfiltered skill. Come craft your legacy and leave them breathless.",
     Si: "• Battle Duration: Each dancer gets 45-60 seconds per round. Number of rounds (prelims, semis, finals) will depend on participation and judges' decision.|• The Lead-Off: A coin toss or bottle spin determines who starts. Turns will alternate in each round.|• Music Selection: The DJ has full control over the music. Dancers must adapt to any genre; no custom tracks allowed.|• Tie-Breaker Protocol: If judges cannot decide, a 'One-More-Round' (30-45 seconds) will be given.|• Judging Authority: All judge decisions are final. Any argument or delay may lead to disqualification.",
     gi: "• Zero-Contact Policy: Any intentional physical contact (pushing, bumping, grabbing) will result in immediate disqualification.|• The Buffer Zone: Dancers must respect personal space and avoid aggressive or threatening behavior.|• Prohibition of Offensive Gestures: No abusive or disrespectful gestures allowed.|• No Verbal Heckling: No shouting or insulting during the battle.|• Crew Intervention: If friends/crew interfere or crowd the floor, the dancer may be disqualified.|• Post-Battle Conduct: Dancers must show sportsmanship (handshake/nod) after the battle.|• Safety Hazards: No dangerous props or anything that may cause injury or make the floor unsafe.",
@@ -326,9 +357,9 @@ share a screenshot of the total score with the coordinator||| PointSystem: |&nbs
 
   {
     id: 2,
-    TnL:"23 April 2026, 3:00 PM - 5:00 PM | MCA Seminal Hall",
+    TnL:"23 April 2026, 3:00 PM - 5:00 PM | MCA Seminar Hall",
     Abt: "Step into a world of tradition and grace as skilled dancers bring the rich legacy of Indian classical dance to life. From the precise footwork of Bharatanatyam to the rhythmic spins of Kathak and the expressive storytelling of Odissi, each performance will transport you through centuries of cultural heritage. Witness the elegance of flowing movements, intricate hand gestures, and captivating expressions, all set to the soulful rhythms of classical music. Let the beauty and depth of India’s classical dance forms leave you mesmerised — and if you have the skill and passion, this is your chance to take the stage and shine.",
-    Si: `•No accompanists are allowed.
+    Si: `• Upto 1 accompanist allowed.
 |• Songs must be in MP3 format and uploaded to a designated Google Drive folder at least 2 days before the event. The folder link will be shared after registration.
 |• Duration: Maximum of 6 minutes allowed:
 | &nbsp;*&nbsp; 5 minutes – Performance
@@ -379,25 +410,24 @@ Step into a vibrant space where creativity meets skill, and every stroke tells a
     id: 24,
     TnL: "24 April 2026, 3:00 PM - 5:00 PM | Auditorium",
     Abt: `Step into the spotlight where attitude speaks louder than words and every step becomes a statement. Rhythm Runway is your chance to showcase creativity, coordination, and unmatched stage presence. Form your team. Design your theme. Walk with purpose. From bold street swagger to royal elegance, this stage is yours to express, impress, and dominate.`,
-    Si: `• The Performance duration is 8minutes, with a 2 minute grace period.
-|• Alloutfitsmustbe stylish,elegant,andappropriate for a public
+    Si: `• The Performance duration is 8 minutes, with a 2 minute grace period.
+|• All outfits must be stylish, elegant, and appropriate for a public
 audience.
-|• Participantsmustmaintain professionalism; any formof discrimination,
-offensive behaviour,or disrespect will lead to disqualification.
-|• Hazardous propssuch assharpobjects,flammablematerials,or any
-itemthat couldcause injury are strictly prohibited.
-|• Each teammust consist ofstudentsfromthe same college, witha
-teamsize between 6 to 12members.
-|• Teamsmustregister before the deadline to be eligiblefor
+|• Participants must maintain professionalism, any form of discrimination,
+offensive behaviour, or disrespect will lead to disqualification.
+|• Hazardous props such as sharp objects,flammable materials, or any
+item that could cause injury are strictly prohibited.
+|• Each team must consist of students from the same college, with a
+team size between 6 to 12 members.
+|• Teams must register before the deadline to be eligible for
 participation.
-|• Music tracksforthe runwaywalkmustbesubmitted to the
-organisers atleasttwo days before the event.
-|• Each teamisresponsibleforarranging theirowncostumes,props,
+|• Music tracks for the runway walk must be submitted to the
+organisers atleast two days before the event.
+|• Each team is responsible for arranging their own costumes, props 
 and accessories.
-
-|• Participantsmuststrictly follow the given time limits fortheirrunway walks.
+|• Participants must strictly follow the given time limits for their runway walks.
 |• Lighting Requirements for the runway walk must be submitted
-in PDF form to the organisers at least two days before the
+ in PDF form to the organisers at least two days before the
 event.`,
     gi: `• The decision of the judges will be final and binding.
 |• Participants must report 3 hours before the event starts and must be
@@ -418,14 +448,14 @@ for those with nerves of steel and an iron stomach. In this race
 against time, individuals must conquer a series of food-based
 "boss levels" to prove they have the speed, strategy, and capacity
 to be crowned the Ultimate Glutton.`,
-    Si: `|• Players must report to the venue at least 25–30 minutes
+    gi: `• Players must report to the venue at least 25–30 minutes
 before their assigned time slot.
 |• Listen carefully to the briefing instructions before
 entering the room.
 |• Do not interfere in another participant’s gameplay.
 |• Any form of cheating or rule violation will result in
 immediate disqualification.`,
-    gi: `• Absolute Compliance:
+    Si: `• Absolute Compliance:
 All instructions from the Frontman and the Kitchen Guards are
 final. The signal to start must be obeyed instantly, and any eating
 before the whistle or after the timer stops will result in instant
@@ -569,7 +599,7 @@ the designated deadline.`,
 allowed to participate.
 |• No refunds will be given under any circumstances.`,
     Rfee: 100,
-    pool: 1000
+    pool: 2000
   },
 
   {
@@ -626,7 +656,7 @@ positive note, demonstrating mutual respect.
 
   {
     id: 8,
-    TnL: "23rd April 2026, 12:30 PM - 3:00 PM",
+    TnL: "23rd April 2026, 12:30 PM - 3:00 PM | Boy's Common Room",
     Abt: `Step into a world where stories come alive and puzzles guard the way forward.
 The Literary Escape Room is an immersive challenge that blends literature,
 logic, and teamwork. Teams will decode clues, unravel narratves, and solve
@@ -661,7 +691,7 @@ lead to penalties or disqualification.`,
 disqualification.
 |• No refunds will be given under any circumstances.`,
     Rfee: 300,
-    pool: 2000 - 1000,
+    pool: 3000,
   },
 
 
@@ -741,7 +771,7 @@ function openPopup(id) {
             
             <div class="description">
                 <h3>About</h3>
-                <p>${details.Abt}</p>
+                <p>${details.Abt.replaceAll("|", "<br>")}</p>
             </div>
             <br>
 
