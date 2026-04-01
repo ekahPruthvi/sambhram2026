@@ -113,12 +113,79 @@ var cards = [
   },
   { id: 20, name: "Among Us", info: "Among Us", img: "./img/amongus.png" },
   { id: 21, name: "Dhwani", info:"Classical Solo singing", img: "./img/dhwani.png"},
-  { id: 22, name: "Tinitique", info:"sketching or face canvas ", img: "./img/tinitique.png"},
+  { id: 22, name: "Tinitique", info:"Face canvas ", img: "./img/tinitique.png"},
   { id: 23, name: "Roots Unscripted", info:"Improv", img: "./img/rootsuns.png"},
-  { id: 24, name: "Rhythm Runway ", info: "Group Fashion Walk", img: "./img/fashionwalk.png" }
+  { id: 24, name: "Rhythm Runway ", info: "Group Fashion Walk", img: "./img/fashionwalk.png" },
+  { id: 25, name: "IPL AUCTION", info: "IPL Auction", img: "./img/HOG.png" },
+  { id: 26, name: "Painting", info: "Painting and sketching", img: "./img/pain.jpeg" }
 ];
 
 var popDesc = [
+  {
+    id: 25, 
+    TnL: `23 April 2026, 12:30 PM - 6:30 PM | 6th Floor, Seminal Hall`,
+    Abt: `Step into the electrifying world of the IPL Auction on — a high-stakes
+battleground where strategy, instinct, and quick decisions define champions.
+Experience the thrill as teams compete to build their ul mate squad, balancing
+budgets while chasing the best talent on the table.
+With every bid, the pressure rises. Every second counts. Every choice can
+change the game. |
+This isn’t just an auction on — it’s a test of leadership, teamwork, and cricketing
+intelligence. Get ready to outbid and outplay your rivals in a fast paced
+showdown where only the smartest team walks away victorious.`,
+    Si: `Team Requirements:- |• Each team must consist of 5 players.
+|• A team leader must be designated for each team. The team leader will serve
+as the point of contact for communication on between the organizing
+committee and the team.
+|• All team members are required to be present at the venue; remote
+participation on is not permitted
+|||• Each team will operate within a predetermined budget during the auction.
+Teams are not permitted to exceed this budget while bidding for players.
+|• The auctioneer will announce the player's name and their base value.
+Teams will then place bids for the player by raising their paddles.
+|• Subsequent bids must meet or exceed the minimum bid increment set by the
+auctioneer.
+|• Every team must have precisely 11 players by the conclusion of the auction.
+Including 5 overseas and 6 Indians.
+|• Teams must clearly signal their bids to avoid any confusion.
+|• Each player's bidding process will have a designated me limit. Failure to
+place a bid within this me frame will result in the player being considered
+unsold.
+|• Teams should maintain thorough records of their expenditures, players
+acquired, and any other permanent information on to ensure transparency and
+prevent misunderstandings.
+|• Participants are required to adhere to the instructions provided by the event
+organizers and comply with any additional rules or guidelines communicated
+to them.`,
+    gi: `• Decision of the judges will be final and binding.
+|• Participants are requested to report 1 hour before the commencement of the
+event.
+|• No refunds will be given under any circumstance.`,
+    Rfee: 400,
+    pool: 4000
+  },
+
+  {
+    id: 26,
+    TnL: `23 April 2026 , 3:00 PM - 5:00 PM | Drawing Room`,
+    Abt: `Attention college participants! Step into a world of colours, creativity, and imagination. The Painting
+Event is an engaging experience that brings together art enthusiasts to express themselves on
+canvas. Participants will explore themes, experiment with techniques, and create unique artworks
+that reflect their ideas and emotions.`,
+    Si: `• Participants are free to choose any theme, style, or concept.
+|• All common painting mediums are allowed (watercolour, acrylic, poster colours, etc.).
+|• Participants must complete their artwork within the given time limit.
+|• Only individual participation is allowed.
+|• Participants must bring their own art supplies and a standard canvas.
+|• Use of mobile phones or reference images during the event is permiƩed.
+|• Final artwork must be submiƩed before the deadline for evaluation.`,
+    gi: `• Report to the venue at least 20-30 minutes before the event begins.
+|• Any form of misconduct will lead to disqualification.
+|• Respect fellow participants and maintain a positive environment, and all the best!`,
+    Rfee: 100,
+    pool: 1000
+  },
+
   {
     id: 11,
     TnL: "24 April 2026, 2:30 pm – 6:00 pm | RVITM",
@@ -550,7 +617,7 @@ allowed to participate.
 
   {
     id: 17,
-    TnL: "23 April 2026, 9:00 AM - 6:00 PM | Auditorium",
+    TnL: "23 April 2026, 9:00 PM - 6:00 AM | Auditorium",
     Abt: `Welcome to Midnight Verdict 2026 – the overnight murder mystery event where nothing is as it seems.
 Step into a world of secrets, suspense, and unexpected betrayals as you take on the role of a detective in this high-stakes investigation. Your mission? Unravel a chilling mystery, piece together cryptic clues, interrogate elusive suspects, and expose the murderer—before it’s too late.
 With mind-bending twists, a spine-chilling atmosphere, and a race against time, Midnight Verdict 2026 is not just an event—it’s an experience. Every clue matters. Every decision shapes the outcome.
