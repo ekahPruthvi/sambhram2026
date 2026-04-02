@@ -830,6 +830,7 @@ function openPopup(id) {
 
   if (card && details) {
     const formattedTnL = details.TnL.replaceAll("|", "<br>");
+    const location = details.TnL.split("|")[1].trim();
 
     pack.innerHTML = `
             <img src="${card.img}">
@@ -859,6 +860,7 @@ function openPopup(id) {
             </div>
             <br>
             <div class="footer-info">
+                <span><strong>Venue: ${location} </strong></span> <br><br>
                 <span><strong>Reg Fee:</strong> ₹${details.Rfee}</span> <br>
                 <span><strong>Prize Pool:</strong> ₹${details.pool}</span>
             </div>
