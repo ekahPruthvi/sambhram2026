@@ -426,6 +426,13 @@ a:hover {
     border: 1px solid rgba(255, 255, 255, 0.36);
     display: flex;
     flex-direction: column;
+    animation: fadee 0.5s;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.inner-card:hover {
+    opacity: 1;
     animation: unfadee 0.5s;
 }
 
@@ -435,11 +442,6 @@ a:hover {
     } to {
         opacity: 1;
     }
-}
-
-.inner-card:hover {
-    opacity: 0;
-    animation: fadee 0.5s;
 }
 
 @keyframes fadee {
