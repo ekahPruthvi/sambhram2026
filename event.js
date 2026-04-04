@@ -80,7 +80,7 @@ var cards = [
     info: "1v1 dance challenge",
     img: "./img/stepclash.png",
   },
-  { id: 14, name: "Style Sync", info: "Duet Walk", img: "./img/stylesync.png" },
+  // { id: 14, name: "Style Sync", info: "Duet Walk", img: "./img/stylesync.png" },
   {
     id: 15,
     name: "BEATSTORM",
@@ -198,7 +198,7 @@ that reflect their ideas and emotions.`,
 
   {
   id: 1,
-  TnL: "23 April 2026, 12:30 PM – 2:30 PM | RVITM, MCA Seminar Hall",
+  TnL: "24 April 2026, 3:30 PM – 5:00 PM | Auditorium",
   Abt: "Immerse yourself in the rhythm of time as our event, Footprints in Time takes you on a journey through movement and expression. From timeless elegance to modern energy, every step captures a story, blending past and present in a dynamic celebration of dance.",
   Si: "• The total performance duration is 3+1 minutes (3 minutes for performance, 1 minute for setup and clearance).|• Performances must not include sensitive topics such as religion, politics, or social controversies.|• Exceeding the time limit will result in point deductions.|• The use of hazardous props, including sharp objects, flammable materials, or any items that could cause injury, is strictly prohibited.|• Participants must maintain professional conduct both backstage and during the event.|• All participants must show respect towards fellow performers, judges, and event organizers, ensuring a positive and inclusive environment.|• Rule violations may result in immediate disqualification.|• Music tracks for the performance must be submitted in MP3 format.|• Participants must bring their own costumes, props, and accessories.|• All participants must adhere to the rules set by the organising committee, and any violations may result in penalties or disqualification.|• Accompanists are not permitted; performances must be solo.|• Backdrop requirements: Video backdrops must be in MP4 format; photo backdrops must be in PDF or PPT format; all backdrops must be in landscape mode.|• Any specific lighting requirements must be communicated to the event coordinators in advance.",
   gi: "• Decision of the judges will be final and binding.|• Participants are requested to report 1 hour before the commencement of the event.|• No refunds will be given under any circumstance.",
@@ -264,50 +264,50 @@ that reflect their ideas and emotions.`,
     pool: 9000,
   },
   
-  {
-    id: 14,
-    TnL: "24 April 2026, 12:30 PM – 2:30 PM | RVITM, Auditorium",
-    Abt: `Style Sync is a dynamic duet fashion walk event that celebrates creativity,
-coordination, and confidence. Designed for pairs who can match not just outfits
-but energy and attitude.
-From themed ensembles to bold storytelling through fashion, each duo will own
-the ramp with coordinated walks, striking poses, and captivating stage
-presence. Elegant or edgy, traditional or futuristic — there are no limits, only
-expression. Style Sync is your chance to stand out, sync up, and shine like never
-before!`,
-    Si: `• Performance Duration: 2 minutes + 1-minute grace period.
-|• Dress Code: Outfits must be stylish, tasteful, and appropriate for a public
-audience.
-|• Content Restrictions: Performances must not incorporate sensitive topics,
-including but not limited to religion, politics, or social controversies.
-|• Time Adherence: Exceeding the time limit will result in point deductions.
-|• Props & Safety: Hazardous props such as sharp objects, flammable
-materials, or any items that could cause injury are strictly prohibited.
-|• Professional Conduct: Participants must conduct themselves professionally
-both backstage and during the event.
-|• Respect & Inclusion: Discrimination or derogatory behavior towards other
-participants, judges, or organizers will not be tolerated.
-|• Disqualification Clause: Any rule violations may result in immediate
-disqualification.
-|• Team Composition: Each team must consist of two members who are
-students from the same college.
-|• Music Submission: Music tracks for the runway walk must be submitted at
-least 2 days prior to the event.
-|• Self-Sufficiency: Participants are responsible for bringing their own
-costumes, props, and accessories.
-|| Compliance: All participants must adhere to the rules set by the organizing
-committee. Any violations will be subject to penalties or disqualification`,
-    gi: `• The decision of the judges will be final and binding.
-|• Participants are required to report 2 hours before the commencement of the
-event.
-|• No refunds will be given under any circumstance.`,
-    Rfee: 350,
-    pool: 2500,
-  },
+//   {
+//     id: 14,
+//     TnL: "24 April 2026, 12:30 PM – 2:30 PM | RVITM, Auditorium",
+//     Abt: `Style Sync is a dynamic duet fashion walk event that celebrates creativity,
+// coordination, and confidence. Designed for pairs who can match not just outfits
+// but energy and attitude.
+// From themed ensembles to bold storytelling through fashion, each duo will own
+// the ramp with coordinated walks, striking poses, and captivating stage
+// presence. Elegant or edgy, traditional or futuristic — there are no limits, only
+// expression. Style Sync is your chance to stand out, sync up, and shine like never
+// before!`,
+//     Si: `• Performance Duration: 2 minutes + 1-minute grace period.
+// |• Dress Code: Outfits must be stylish, tasteful, and appropriate for a public
+// audience.
+// |• Content Restrictions: Performances must not incorporate sensitive topics,
+// including but not limited to religion, politics, or social controversies.
+// |• Time Adherence: Exceeding the time limit will result in point deductions.
+// |• Props & Safety: Hazardous props such as sharp objects, flammable
+// materials, or any items that could cause injury are strictly prohibited.
+// |• Professional Conduct: Participants must conduct themselves professionally
+// both backstage and during the event.
+// |• Respect & Inclusion: Discrimination or derogatory behavior towards other
+// participants, judges, or organizers will not be tolerated.
+// |• Disqualification Clause: Any rule violations may result in immediate
+// disqualification.
+// |• Team Composition: Each team must consist of two members who are
+// students from the same college.
+// |• Music Submission: Music tracks for the runway walk must be submitted at
+// least 2 days prior to the event.
+// |• Self-Sufficiency: Participants are responsible for bringing their own
+// costumes, props, and accessories.
+// || Compliance: All participants must adhere to the rules set by the organizing
+// committee. Any violations will be subject to penalties or disqualification`,
+//     gi: `• The decision of the judges will be final and binding.
+// |• Participants are required to report 2 hours before the commencement of the
+// event.
+// |• No refunds will be given under any circumstance.`,
+//     Rfee: 350,
+//     pool: 2500,
+//   },
 
   {
     id: 3,
-    TnL: "23 April 2026, 1:00 PM – 3:00 PM | RVITM, Auditorium",
+    TnL: "24 April 2026, 12:00 PM – 2:00 PM | RVITM, Auditorium",
     Abt: "Laya Group Dance is a grand celebration of rhythm, expression, and artistic unity. This event serves as a platform for dancers to showcase their creativity through synchronized choreography, emotive storytelling, and compelling stage presence. Participants mesmerize the audience with their harmony, energy, and the seamless blend of music and movement.",
     Si: "• Each team should comprise a minimum of 6 and maximum of 15 members.|• The time limit is 5+2 minutes. Duration of the performance should not exceed 5 minutes and a maximum of 2 minutes will be given for stage setup.|• Competition will be held in one round.|• All dance forms are welcome.|• Multiple teams from the same college are allowed.|• Props are allowed and all props must be specified to the event coordinator beforehand.|• Usage of any props such as fire, fluid, or sharp items that are harmful is strictly prohibited.|• No profanity to be displayed through the performance.|• Music tracks should be submitted at least two days before the event in MP3 format.|• Backdrop for performance (if needed) must be submitted at least 2 days before the event in a Google Drive link provided by the organisers. Video backdrops must be in MP4 format; image backdrops (landscape) must be in PDF or PPT format.|• Any special lighting requests must be communicated to the event coordinators in advance.|• Participants must bring their own costumes, props and accessories on the day of the event.|• All participants must follow the rules set by the Organising Committee, and any violations may lead to penalties or disqualification.",
     gi: "• The decision of the judges will be final and binding.|• Participants must report 1 hour before the event starts. Latecomers might not be allowed to participate.|• No refunds will be given under any circumstances.",
@@ -417,7 +417,7 @@ share a screenshot of the total score with the coordinator||| PointSystem: |&nbs
 
   {
     id: 2,
-    TnL:"23 April 2026, 3:00 PM - 5:00 PM | MCA Seminar Hall",
+    TnL:"24 April 2026, 2:00 PM - 3:30 PM | Auditorium",
     Abt: "Step into a world of tradition and grace as skilled dancers bring the rich legacy of Indian classical dance to life. From the precise footwork of Bharatanatyam to the rhythmic spins of Kathak and the expressive storytelling of Odissi, each performance will transport you through centuries of cultural heritage. Witness the elegance of flowing movements, intricate hand gestures, and captivating expressions, all set to the soulful rhythms of classical music. Let the beauty and depth of India’s classical dance forms leave you mesmerised — and if you have the skill and passion, this is your chance to take the stage and shine.",
     Si: `• Upto 1 accompanist allowed.
 |• Songs must be in MP3 format and uploaded to a designated Google Drive folder at least 2 days before the event. The folder link will be shared after registration.
@@ -468,7 +468,7 @@ Step into a vibrant space where creativity meets skill, and every stroke tells a
 
   {
     id: 24,
-    TnL: "24 April 2026, 3:00 PM - 5:00 PM | Auditorium",
+    TnL: "23 April 2026, 1:00 PM - 3:00 PM | Auditorium",
     Abt: `Step into the spotlight where attitude speaks louder than words and every step becomes a statement. Rhythm Runway is your chance to showcase creativity, coordination, and unmatched stage presence. Form your team. Design your theme. Walk with purpose. From bold street swagger to royal elegance, this stage is yours to express, impress, and dominate.`,
     Si: `• The Performance duration is 8 minutes, with a 2 minute grace period.
 |• All outfits must be stylish, elegant, and appropriate for a public
