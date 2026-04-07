@@ -597,6 +597,8 @@ organisers before the event
 |• The competition will be held in one round only.
 |• Participants must bring their instruments.
 |• Participants are responsible for their instruments.
+|• Each participant is permitted to be accompanied by one accompanist only during the performance.
+|• The accompanist’s role must strictly just be supportive. Their contribution must complement the main performer and must not overshadow or dominate the participant’s solo performance.
 |• For any special technical requirements, participants may contact the event
 coordinators.`,
     gi: `• The decision of the judges will be final and binding.
