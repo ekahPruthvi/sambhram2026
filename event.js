@@ -177,8 +177,8 @@ that reflect their ideas and emotions.`,
 |• Participants must complete their artwork within the given time limit.
 |• Only individual participation is allowed.
 |• Participants must bring their own art supplies and a standard canvas.
-|• Use of mobile phones or reference images during the event is permiƩed.
-|• Final artwork must be submiƩed before the deadline for evaluation.`,
+|• Use of mobile phones or reference images during the event is permitted.
+|• Final artwork must be submitted before the deadline for evaluation.`,
     gi: `• Report to the venue at least 20-30 minutes before the event begins.
 |• Any form of misconduct will lead to disqualification.
 |• Respect fellow participants and maintain a positive environment, and all the best!`,
