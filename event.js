@@ -117,7 +117,7 @@ var cards = [
   { id: 23, name: "Roots Unscripted", info:"Improv", img: "./img/rootsuns.webp"},
   { id: 24, name: "Rhythm Runway ", info: "Group Fashion Walk", img: "./img/fashionwalk.webp" },
   { id: 25, name: "IPL AUCTION", info: "IPL Auction", img: "./img/HOG.webp" },
-  { id: 26, name: "Painting", info: "Painting and sketching", img: "./img/pain.jpeg" }
+  { id: 26, name: "Painting", info: "Painting and sketching", img: "./img/pain.webp" }
 ];
 
 var popDesc = [
