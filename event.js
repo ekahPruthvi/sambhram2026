@@ -11,6 +11,8 @@ window.onload = function() {
     openPopup(10);
   } else if (action === 'mid') {
     openPopup(17);
+  } else if (action === 'shoot') {
+    openPopup(7);
   } 
 };
 
@@ -626,7 +628,6 @@ Do you have what it takes?`,
 |• Participants must handle all evidence and props provided with care. Tampering with or damaging evidence will result in penalties and may hinder the progress of the investigation.
 |• Teams will have a set amount of time to solve the mystery. The event will conclude at a predetermined time, and teams must submit their conclusions before the deadline.
 |• Participants must engage in fair play and refrain from cheating or engaging in any form of dishonesty. Any team found to be cheating will be disqualified from the event.
-|• Dinner will be provided for all participants.
 |• Team Size can be 2 to 4 members`,
     gi: `• The decision of the judges will be final and binding.
 |• Participants must report 2 hours before the event starts. Latecomers may not be allowed to participate.
