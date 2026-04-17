@@ -262,8 +262,8 @@ that reflect their ideas and emotions.`,
     Abt: "Beatstorm is a live music showcase at Sambhram ’26 that brings together college bands for an evening centered around performance, creativity, and sound. Featuring a wide range of genres including rock, indie, metal, and fusion, the event highlights each band’s unique style, musicality, and stage presence. It is designed as a space where artists can present both original compositions and reinterpretations, creating a diverse and engaging listening experience. Set against a dynamic stage and a lively audience, Beatstorm focuses on the essence of live performance — energy, coordination, and connection. The event offers emerging musicians an opportunity to perform in a professional setup, interact with fellow artists, and leave a lasting impression through their music.",
     Si: "• Team Size: 3-8 Members|• Participants must bring their own instruments.|• A 5-piece drum kit will be provided by the host college.|• In case of any special technical requirements, the event coordinators can be contacted.|• Open for all colleges, professional and semi-professional bands, but at least one member of the team must be currently pursuing their graduation|• Each participant is allowed to represent only one band.|• Songs with appropriate lyrics are to be chosen, and the lyrics sheet must be submitted prior to the performance for OCs.|• Time limit for the performance is 15 minutes, including setup, soundcheck, and clearance|• Only Indian languages and English songs can be performed.|• Originals will be given more weightage.|• Processed music and backing tracks are strictly not allowed.",
     gi: "• The competition will be held in 1 round only.|• In case of special technical requirements for the instruments, event coordinators must be informed in advance.|• Participants are requested to report 2 hours before the commencement of the event.|• Judges’ decisions will be considered final and binding.",
-    Rfee: 1500,
-    pool: 9000,
+    Rfee: 1000,
+    pool: 6000,
   },
   
 //   {
