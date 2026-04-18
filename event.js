@@ -312,7 +312,7 @@ that reflect their ideas and emotions.`,
     TnL: "24 April 2026, 12:00 PM – 2:00 PM | RVITM, Auditorium",
     Abt: "Laya Group Dance is a grand celebration of rhythm, expression, and artistic unity. This event serves as a platform for dancers to showcase their creativity through synchronized choreography, emotive storytelling, and compelling stage presence. Participants mesmerize the audience with their harmony, energy, and the seamless blend of music and movement.",
     Si: "• Each team should comprise a minimum of 6 and maximum of 15 members.|• The time limit is 5+2 minutes. Duration of the performance should not exceed 5 minutes and a maximum of 2 minutes will be given for stage setup.|• Competition will be held in one round.|• All dance forms are welcome.|• Multiple teams from the same college are allowed.|• Props are allowed and all props must be specified to the event coordinator beforehand.|• Usage of any props such as fire, fluid, or sharp items that are harmful is strictly prohibited.|• No profanity to be displayed through the performance.|• Music tracks should be submitted at least two days before the event in MP3 format.|• Backdrop for performance (if needed) must be submitted at least 2 days before the event in a Google Drive link provided by the organisers. Video backdrops must be in MP4 format; image backdrops (landscape) must be in PDF or PPT format.|• Any special lighting requests must be communicated to the event coordinators in advance.|• Participants must bring their own costumes, props and accessories on the day of the event.|• All participants must follow the rules set by the Organising Committee, and any violations may lead to penalties or disqualification.",
-    gi: "• The decision of the judges will be final and binding.|• Participants must report 1 hour before the event starts. Latecomers might not be allowed to participate.|• No refunds will be given under any circumstances.",
+    gi: "• The decision of the judges will be final and binding.|• Participants must report 1 hour before the event starts. Latecomers might not be allowed to participate.|• No refunds will be given under any circumstances.|| Stage Dimentions: 27*19",
     Rfee: 1000,
     pool: 10000,
   },
@@ -495,7 +495,7 @@ event.`,
 |• Participants must report 3 hours before the event starts and must be
 ready 1 hour before their performance. Latecomers may not be allowed
 to participate.
-|• No refunds will be given under any circumstances.`,
+|• No refunds will be given under any circumstances.|| Stage Dimentions: 27*29( comprising of ramp: 9*6)`,
     Rfee: 1500,
     pool: 9000,
   },
