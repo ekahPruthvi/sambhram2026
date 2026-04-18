@@ -228,7 +228,7 @@ that reflect their ideas and emotions.`,
   },
   {
   id: 4,
-  TnL: "23 April 2026, 3:00 PM – 5:00 PM | RVITM, 6th Floor Seminar Hall",
+  TnL: "23 April 2026, 3:00 PM – 5:00 PM | RVITM, 6th MCA Seminar Hall",
   Abt: "It's time to claim the mic and let your vocal prowess take center stage in our highly anticipated solo vocal showdown! Whether you plan to bring the house down with a high-octane pop hit or move the room to tears with a breathtaking acoustic melody, we want to see you mesmerize the audience with your authentic flair. We welcome tracks from every genre—this is your blank canvas to paint with your own unique musical signature. Connect deeply with the lyrics, let the beat drive you, and deliver a performance that gives the crowd chills. Battle it out to be crowned this year's top vocal powerhouse in an event where pure talent meets untamed emotion. The stage is set—grab your chance to make history!",
   Si: "• Time Limit for each performance is limited to 3+1 minutes (3 minutes for singing, 1 minute for setup/transition).|• An accompanist is allowed along with the participant.|• Participants may play their own instruments while singing. Instruments will not be provided by the host college.|• Any special technical requirements for instruments must be communicated to event coordinators in advance.|• Karaoke or backing tracks are allowed, but must be uploaded to the provided Drive link. Participants must also bring a backup on a pen drive.|• The competition will be held in a single round only.",
   gi: "• The decision of the judges will be final and binding.|• Participants must report 1 hour before the event starts. Latecomers may not be allowed to participate.|• No refunds will be given under any circumstances.",
