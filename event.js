@@ -545,7 +545,8 @@ Final Feast ends there.
 A round is only considered complete once a player raises their
 hand and demonstrates an empty mouth to a Guard. Swallowing
 must be visible and verified before the clock is officially stopped
-for that individual.`,
+for that individual. ||| Disclaimer: |
+Participants are advised to be mindful of their own food allergies, intolerances, or dietary restrictions before taking part in the Hog-a-thon. The organizers will not be held responsible for any allergic reactions, health issues, or discomfort arising from the consumption of food during the event. Participation is at your own risk.`,
     Rfee: 200,
     pool: 2000, 
   },

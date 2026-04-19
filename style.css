@@ -431,6 +431,29 @@ a:hover {
     cursor: pointer;
 }
 
+.showBox {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    /* margin-bottom: 10vh; */
+    background-color: #000000;
+    z-index: 99999999;
+    padding: 20px;
+}
+
+.showBox img.swaShow {
+    /* width: 70%; */
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -50px; 
+    display: block;
+    object-fit: contain;
+    background-color: #000;
+    border-radius: 20px;
+}
+
+
 select {
     all: unset;
     background-color: #000;
@@ -500,7 +523,7 @@ select {
     position: fixed;
     top: 2vh;
     left: 2vw;
-    z-index: 999999;
+    z-index: 999999999;
     width: 96vw;
     height: 96vh;    
     border-radius: 30px;
@@ -541,6 +564,11 @@ select {
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.783) 0px 7px 29px 0px;
     border: 1px solid rgba(0, 0, 0, 0.498);
+}
+
+.idc-i-want-no {
+    all: unset;
+    background-color: transparent;
 }
 
 #pack {
@@ -757,6 +785,15 @@ menu {
         padding: 5px;
         border-radius: 50px;
         border: 2px solid black;
+    }
+
+    .showBox {
+        display: flex;
+        flex-direction: row;
+        position:relative;
+        /* margin-bottom: 50px; */
+        height: 15vh;
+        z-index: 9;
     }
 
 }
