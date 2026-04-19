@@ -160,3 +160,38 @@ window.addEventListener("click", function(event) {
 //     evt.preventDefault();
 //     scrlckevent.scrollLeft += evt.deltaY;
 // }, { passive: false });
+
+// const ticket = document.querySelector('.idc-i-want-no');
+
+// let isDragging = false;
+// let offsetX, offsetY;
+
+// ticket.addEventListener('mousedown', (e) => {
+//     isDragging = true;
+    
+//     // Calculate the distance between the mouse and the top-left of the ticket
+//     offsetX = e.clientX - ticket.getBoundingClientRect().left;
+//     offsetY = e.clientY - ticket.getBoundingClientRect().top;
+    
+//     ticket.style.cursor = 'grabbing';
+// });
+
+// document.addEventListener('mousemove', (e) => {
+//     if (!isDragging) return;
+
+//     // Calculate new position
+//     let x = e.clientX - offsetX;
+//     let y = e.clientY - offsetY;
+
+//     // Apply the position
+//     ticket.style.left = `${x}px`;
+//     ticket.style.top = `${y}px`;
+    
+//     // Remove the margin so it doesn't interfere with the new coordinates
+//     ticket.style.margin = '0'; 
+// });
+
+// document.addEventListener('mouseup', () => {
+//     isDragging = false;
+//     ticket.style.cursor = 'grab';
+// });
