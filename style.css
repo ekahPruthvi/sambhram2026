@@ -729,7 +729,8 @@ menu {
 @media screen and (max-width: 767px) {
 
     .idc-i-want-no {
-        width: 200px;
+        width: 150px;
+        right: 5px;
     }
 
     .me h1,
