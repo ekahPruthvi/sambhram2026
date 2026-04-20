@@ -74,7 +74,7 @@ var cards = [
     id: 12,
     name: "The spotlight",
     info: "monologue",
-    img: "./img/spotlight.webp",
+    img: "./img/spotlight.jpeg",
   },
   {
     id: 13,
@@ -509,7 +509,39 @@ thon is a high-intensity, solo-survival eating challenge designed
 for those with nerves of steel and an iron stomach. In this race
 against time, individuals must conquer a series of food-based
 "boss levels" to prove they have the speed, strategy, and capacity
-to be crowned the Ultimate Glutton.`,
+to be crowned the Ultimate Glutton.||| Picture this: music thumping, crowd cheering, ten brave souls stepping into a battlefield made entirely of food. It’s fast, it’s chaotic, it’s ridiculously fun. Every round flips the flavor script, taking you from sweet to spicy to “why did I agree to this?” in under 30 minutes. This isn’t just eating… this is performance, survival, and pure entertainment wrapped into one deliciously wild ride.
+
+||🍯 ROUND 1: JELBI RUSH
+
+We kick things off with the golden swirls of jalebi — sticky, sweet, and deceptively tricky. The perfect way to wake up your competitive spirit.
+
+||🌭 ROUND 2: VADA PAV SPEED RUN
+
+A street food legend enters the game. Mumbai’s iconic vada pav brings the carb chaos and kicks the energy up a notch.
+
+||🍉 ROUND 3: WATERMELON COOLDOWN
+
+A refreshing pause… or is it? Juicy watermelon slices take over, cooling things down while the competition stays heated.
+
+||🍔🌶️ ROUND 4: BURGER + TACO BELL HOT SAUCE
+
+Now it gets serious. A loaded burger meets fiery Taco Bell hot sauce — this round is where courage and spice tolerance collide.
+
+||🍫 ROUND 5: DARK CHOCOLATE FINALE
+
+We end on a bold note with 75% dark chocolate. Rich, intense, and the ultimate test of composure.
+
+From laughter to chaos, from sweet cravings to spicy regrets, Hog-a-thon is designed to keep the crowd hooked and the participants on edge. Whether you're competing or just watching, expect moments that are meme-worthy, dramatic, and downright unforgettable.
+
+||⏱️ Fast-paced rounds
+|🎶 High-energy vibes
+|😂 Non-stop entertainment
+
+
+||🚨 Disclaimer
+We are not responsible for any allergies or reactions. Please participate at your own discretion.
+
+|Get ready to eat, compete, and survive the madness. 🍽️🔥`,
     gi: `• Players must report to the venue at least 25–30 minutes
 before their assigned time slot.
 |• Listen carefully to the briefing instructions before
