@@ -68,7 +68,7 @@ var cards = [
     img: "./img/hiddenmanu.webp",
   },
   { id: 9, name: "BGMI", info: "BGMI", img: "./img/bgmi.webp" },
-  { id: 10, name: "Roast Riot", info: "Roast Battle", img: "./img/rapbat.webp" },
+  // { id: 10, name: "Roast Riot", info: "Roast Battle", img: "./img/rapbat.webp" },
   { id: 11, name: "Fifa", info: "Fifa", img: "./img/fifa.webp" },
   {
     id: 12,
@@ -76,12 +76,12 @@ var cards = [
     info: "monologue",
     img: "./img/spotlight.jpeg",
   },
-  {
-    id: 13,
-    name: "Step clash",
-    info: "1v1 dance challenge",
-    img: "./img/stepclash.webp",
-  },
+  // {
+  //   id: 13,
+  //   name: "Step clash",
+  //   info: "1v1 dance challenge",
+  //   img: "./img/stepclash.webp",
+  // },
   // { id: 14, name: "Style Sync", info: "Duet Walk", img: "./img/stylesync.webp" },
   {
     id: 15,
@@ -115,7 +115,7 @@ var cards = [
   },
   { id: 20, name: "Among Us", info: "Among Us", img: "./img/amongus.webp" },
   { id: 21, name: "Dhwani", info:"Classical Solo singing", img: "./img/dhwani.webp"},
-  { id: 22, name: "Tinitique", info:"Face canvas ", img: "./img/tinitique.webp"},
+  // { id: 22, name: "Tinitique", info:"Face canvas ", img: "./img/tinitique.webp"},
   { id: 23, name: "Roots Unscripted", info:"Improv", img: "./img/rootsuns.webp"},
   { id: 24, name: "Rhythm Runway ", info: "Group Fashion Walk", img: "./img/fashionwalk.webp" },
   { id: 25, name: "IPL AUCTION", info: "IPL Auction", img: "./img/HOG.webp" },
