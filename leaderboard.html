@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Leaderboard</title>
+
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  STEP 1 — Paste your Firebase config below.
+  Go to Firebase Console → Project Settings → Your Apps → SDK setup
+  and paste the firebaseConfig object here.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<script>
+  window.FIREBASE_CONFIG = {
+    apiKey: "AIzaSyC1n72A_1dCSeviljCZys50OLFb_UE3No8",
+    authDomain: "sambhram-leaderboard.firebaseapp.com",
+    projectId: "sambhram-leaderboard",
+    storageBucket: "sambhram-leaderboard.firebasestorage.app",
+    messagingSenderId: "124060142470",
+    appId: "1:124060142470:web:13b68c71782db137737a07"
+  };
+
+  // STEP 2 — Set your admin password here (nobody sees this in the DB).
+  window.ADMIN_PASSWORD = "nigga67";
+</script>
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap');
+
+  :root {
+    --bg: #0a0a0f;
+    --surface: #111118;
+    --border: #1e1e2e;
+    --accent: #f0c040;
+    --accent2: #e06030;
+    --text: #e8e8f0;
+    --muted: #6060a0;
+    --green: #40c080;
+    --red: #e05050;
+    --rank1: #f0c040;
+    --rank2: #b0b8c8;
+    --rank3: #c08050;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* Grid background */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(240,192,64,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(240,192,64,0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* ── Header ── */
+  header {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 60px 20px 30px;
+  }
+
+  .site-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(64px, 12vw, 120px);
+    letter-spacing: 0.06em;
+    line-height: 1;
+    background: linear-gradient(135deg, var(--accent) 0%, var(--accent2) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .site-subtitle {
+    font-family: 'DM Mono', monospace;
+    font-size: 13px;
+    color: var(--muted);
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    margin-top: 8px;
+  }
+
+  /* ── Controls bar ── */
+  .controls {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    padding: 0 20px 40px;
+    flex-wrap: wrap;
+  }
+
+  button {
+    font-family: 'DM Mono', monospace;
+    font-size: 13px;
+    letter-spacing: 0.08em;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    padding: 10px 22px;
+    transition: all 0.18s;
+  }
+
+  .btn-admin {
+    background: var(--surface);
+    color: var(--accent);
+    border: 1px solid var(--accent);
+  }
+  .btn-admin:hover { background: var(--accent); color: var(--bg); }
+
+  /* ── Main container ── */
+  .container {
+    position: relative;
+    z-index: 1;
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 0 20px 100px;
+  }
+
+  /* ── Podium ── */
+  .podium {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 40px;
+  }
+
+  .podium-slot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+    max-width: 220px;
+  }
+
+  .podium-slot .avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 22px;
+    border: 2px solid var(--muted);
+    background: var(--surface);
+    color: var(--text);
+  }
+
+  .podium-slot.r1 .avatar { border-color: var(--rank1); color: var(--rank1); }
+  .podium-slot.r2 .avatar { border-color: var(--rank2); color: var(--rank2); }
+  .podium-slot.r3 .avatar { border-color: var(--rank3); color: var(--rank3); }
+
+  .podium-slot .pname {
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+  }
+
+  .podium-block {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    padding: 16px 8px;
+  }
+
+  .r1 .podium-block { height: 110px; background: linear-gradient(180deg, rgba(240,192,64,0.25) 0%, rgba(240,192,64,0.05) 100%); border: 1px solid rgba(240,192,64,0.4); }
+  .r2 .podium-block { height: 80px;  background: linear-gradient(180deg, rgba(176,184,200,0.18) 0%, rgba(176,184,200,0.04) 100%); border: 1px solid rgba(176,184,200,0.3); }
+  .r3 .podium-block { height: 60px;  background: linear-gradient(180deg, rgba(192,128,80,0.18) 0%, rgba(192,128,80,0.04) 100%);  border: 1px solid rgba(192,128,80,0.3); }
+
+  .podium-rank {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 28px;
+    line-height: 1;
+  }
+
+  .r1 .podium-rank { color: var(--rank1); }
+  .r2 .podium-rank { color: var(--rank2); }
+  .r3 .podium-rank { color: var(--rank3); }
+
+  .podium-pts {
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    color: var(--muted);
+  }
+
+  /* ── List ── */
+  .list-header {
+    display: grid;
+    grid-template-columns: 48px 1fr 80px 100px;
+    padding: 8px 16px;
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    color: var(--muted);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 4px;
+  }
+
+  .list-row {
+    display: grid;
+    grid-template-columns: 48px 1fr 80px 100px;
+    align-items: center;
+    padding: 14px 16px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    margin-bottom: 4px;
+    transition: all 0.2s;
+    background: var(--surface);
+    animation: fadeIn 0.3s ease both;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  .list-row:hover { border-color: var(--border); transform: translateX(4px); }
+
+  .row-rank {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 22px;
+    color: var(--muted);
+  }
+
+  .row-name { font-weight: 500; font-size: 15px; }
+  .row-id { font-family: 'DM Mono', monospace; font-size: 11px; color: var(--muted); margin-top: 2px; }
+
+  .row-pts {
+    font-family: 'DM Mono', monospace;
+    font-size: 18px;
+    color: var(--accent);
+    text-align: right;
+  }
+
+  .row-change {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    text-align: right;
+    color: var(--muted);
+  }
+
+  .row-change.up { color: var(--green); }
+  .row-change.down { color: var(--red); }
+
+  /* ── Modal overlay ── */
+  .overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.75);
+    backdrop-filter: blur(6px);
+    z-index: 100;
+    align-items: center;
+    justify-content: center;
+  }
+  .overlay.active { display: flex; }
+
+  .modal {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 32px;
+    width: min(520px, 95vw);
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+  }
+
+  .modal-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 32px;
+    color: var(--accent);
+    margin-bottom: 24px;
+    letter-spacing: 0.06em;
+  }
+
+  .modal-close {
+    position: absolute;
+    top: 16px; right: 16px;
+    background: none;
+    color: var(--muted);
+    font-size: 20px;
+    padding: 4px 10px;
+  }
+  .modal-close:hover { color: var(--text); }
+
+  .form-group { margin-bottom: 16px; }
+  label { display: block; font-size: 11px; font-family: 'DM Mono', monospace; color: var(--muted); letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 6px; }
+
+  input, textarea, select {
+    width: 100%;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    color: var(--text);
+    font-family: 'DM Mono', monospace;
+    font-size: 14px;
+    padding: 10px 14px;
+    outline: none;
+    transition: border-color 0.2s;
+    resize: vertical;
+  }
+  input:focus, textarea:focus { border-color: var(--accent); }
+
+  .btn-primary {
+    background: var(--accent);
+    color: var(--bg);
+    font-weight: 500;
+    padding: 12px 28px;
+    width: 100%;
+    font-size: 14px;
+    margin-top: 4px;
+  }
+  .btn-primary:hover { background: #ffd060; }
+
+  .btn-danger {
+    background: rgba(224,80,80,0.15);
+    color: var(--red);
+    border: 1px solid var(--red);
+    font-size: 12px;
+    padding: 7px 14px;
+  }
+  .btn-danger:hover { background: var(--red); color: #fff; }
+
+  .btn-success {
+    background: rgba(64,192,128,0.15);
+    color: var(--green);
+    border: 1px solid var(--green);
+    font-size: 12px;
+    padding: 7px 14px;
+  }
+  .btn-success:hover { background: var(--green); color: var(--bg); }
+
+  .divider { border: none; border-top: 1px solid var(--border); margin: 24px 0; }
+
+  .tabs { display: flex; gap: 4px; margin-bottom: 24px; background: var(--bg); border-radius: 8px; padding: 4px; }
+  .tab {
+    flex: 1;
+    background: none;
+    color: var(--muted);
+    padding: 8px 12px;
+    font-size: 12px;
+    border-radius: 6px;
+    transition: all 0.2s;
+  }
+  .tab.active { background: var(--surface); color: var(--accent); }
+
+  .tab-panel { display: none; }
+  .tab-panel.active { display: block; }
+
+  /* people list in admin */
+  .people-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  .people-table th { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.15em; text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--border); }
+  .people-table td { padding: 8px 8px; border-bottom: 1px solid rgba(255,255,255,0.04); vertical-align: middle; }
+  .people-table td:last-child { text-align: right; }
+
+  .pts-input { width: 80px; background: var(--bg); border: 1px solid var(--border); color: var(--text); font-family: 'DM Mono', monospace; font-size: 13px; padding: 4px 8px; border-radius: 4px; text-align: center; }
+
+  /* toast */
+  #toast {
+    position: fixed;
+    bottom: 32px; left: 50%; transform: translateX(-50%);
+    background: var(--green);
+    color: var(--bg);
+    font-family: 'DM Mono', monospace;
+    font-size: 13px;
+    padding: 10px 24px;
+    border-radius: 40px;
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+  }
+  #toast.show { opacity: 1; }
+  #toast.err { background: var(--red); color: #fff; }
+
+  /* empty state */
+  .empty { text-align: center; padding: 80px 20px; color: var(--muted); font-family: 'DM Mono', monospace; font-size: 13px; }
+
+  .config-notice {
+    background: rgba(240,96,48,0.12);
+    border: 1px solid rgba(240,96,48,0.4);
+    border-radius: 8px;
+    padding: 16px 20px;
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    color: var(--accent2);
+    margin-bottom: 32px;
+    text-align: center;
+    line-height: 1.7;
+  }
+
+  /* scrollbar */
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+</style>
+</head>
+<body>
+
+<!-- Toast -->
+<div id="toast"></div>
+
+<!-- Header -->
+<header>
+  <div class="site-title" id="boardTitle">LEADERBOARD</div>
+  <div class="site-subtitle" id="boardSubtitle">Live Rankings</div>
+</header>
+
+<div class="controls">
+  <button class="btn-admin" onclick="openLogin()">⚙ Admin</button>
+</div>
+
+<div class="container">
+  <div id="configNotice" class="config-notice" style="display:none">
+    ⚠ Firebase not configured yet.<br>
+    Open this file in a text editor and paste your Firebase config at the top.
+  </div>
+
+  <!-- Podium (top 3) -->
+  <div class="podium" id="podium"></div>
+
+  <!-- List header -->
+  <div class="list-header" id="listHeader" style="display:none">
+    <span>#</span>
+    <span>Participant</span>
+    <span style="text-align:right">Points</span>
+    <span style="text-align:right">Change</span>
+  </div>
+
+  <!-- Rows -->
+  <div id="listBody"></div>
+  <div class="empty" id="emptyState" style="display:none">No participants yet. Ask the admin to add some!</div>
+</div>
+
+<!-- ── Login Modal ── -->
+<div class="overlay" id="loginOverlay">
+  <div class="modal" style="max-width:360px">
+    <button class="modal-close" onclick="closeLogin()">✕</button>
+    <div class="modal-title">Admin Login</div>
+    <div class="form-group">
+      <label>Password</label>
+      <input type="password" id="loginPass" placeholder="Enter admin password" onkeydown="if(event.key==='Enter')doLogin()" />
+    </div>
+    <button class="btn-primary" onclick="doLogin()">Unlock Admin Panel</button>
+  </div>
+</div>
+
+<!-- ── Admin Modal ── -->
+<div class="overlay" id="adminOverlay">
+  <div class="modal">
+    <button class="modal-close" onclick="closeAdmin()">✕</button>
+    <div class="modal-title">Admin Panel</div>
+
+    <div class="tabs">
+      <button class="tab active" onclick="switchTab('points')">Add Points</button>
+      <button class="tab" onclick="switchTab('people')">Manage People</button>
+      <button class="tab" onclick="switchTab('import')">CSV Import</button>
+      <button class="tab" onclick="switchTab('settings')">Settings</button>
+    </div>
+
+    <!-- TAB: Add Points -->
+    <div class="tab-panel active" id="tab-points">
+      <div class="form-group">
+        <label>Participant ID</label>
+        <input type="text" id="ptId" placeholder="e.g. alice_42" list="idSuggestions" />
+        <datalist id="idSuggestions"></datalist>
+      </div>
+      <div class="form-group">
+        <label>Points to Add (use negative to subtract)</label>
+        <input type="number" id="ptAmount" placeholder="e.g. 10" value="10" />
+      </div>
+      <div class="form-group">
+        <label>Reason (optional)</label>
+        <input type="text" id="ptReason" placeholder="e.g. Won round 3" />
+      </div>
+      <button class="btn-primary" onclick="addPoints()">Add Points</button>
+    </div>
+
+    <!-- TAB: Manage People -->
+    <div class="tab-panel" id="tab-people">
+      <div style="display:flex;gap:8px;margin-bottom:16px">
+        <input type="text" id="newName" placeholder="Full name" style="flex:1" />
+        <input type="text" id="newId" placeholder="ID (auto)" style="width:130px" />
+        <button class="btn-success" onclick="addPerson()">+ Add</button>
+      </div>
+      <div id="peopleTableWrap">
+        <table class="people-table">
+          <thead><tr><th>ID</th><th>Name</th><th>Pts</th><th></th></tr></thead>
+          <tbody id="peopleRows"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- TAB: CSV Import -->
+    <div class="tab-panel" id="tab-import">
+      <p style="font-size:13px;color:var(--muted);margin-bottom:16px;line-height:1.7">
+        Upload a CSV file with columns <code style="background:var(--bg);padding:2px 6px;border-radius:4px">name,id,points</code>.
+        The <code style="background:var(--bg);padding:2px 6px;border-radius:4px">id</code> and <code style="background:var(--bg);padding:2px 6px;border-radius:4px">points</code> columns are optional — IDs are generated automatically and points default to 0.
+      </p>
+      <div class="form-group">
+        <label>CSV File</label>
+        <input type="file" id="csvFile" accept=".csv" />
+      </div>
+      <div class="form-group">
+        <label>Preview (first 5 rows)</label>
+        <textarea id="csvPreview" rows="5" readonly placeholder="CSV preview will appear here..."></textarea>
+      </div>
+      <button class="btn-primary" onclick="importCSV()">Import CSV</button>
+    </div>
+
+    <!-- TAB: Settings -->
+    <div class="tab-panel" id="tab-settings">
+      <div class="form-group">
+        <label>Board Title</label>
+        <input type="text" id="settingTitle" placeholder="e.g. Season 3 Leaderboard" />
+      </div>
+      <div class="form-group">
+        <label>Subtitle</label>
+        <input type="text" id="settingSubtitle" placeholder="e.g. Live Rankings" />
+      </div>
+      <button class="btn-primary" onclick="saveSettings()">Save Settings</button>
+    </div>
+  </div>
+</div>
+
+<!-- Firebase SDK -->
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+import { getFirestore, collection, doc, onSnapshot, setDoc, updateDoc, deleteDoc, getDoc, increment, serverTimestamp }
+  from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+
+// ── Config check ──────────────────────────────────────────────────────────────
+const isConfigured = window.FIREBASE_CONFIG.apiKey !== "PASTE_YOUR_apiKey_HERE";
+if (!isConfigured) {
+  document.getElementById("configNotice").style.display = "block";
+}
+
+let db, participantsRef, settingsRef;
+
+if (isConfigured) {
+  const app = initializeApp(window.FIREBASE_CONFIG);
+  db = getFirestore(app);
+  participantsRef = collection(db, "participants");
+  settingsRef = doc(db, "meta", "settings");
+}
+
+// ── State ──────────────────────────────────────────────────────────────────────
+let participants = [];   // [{id, name, points, prevPoints}]
+let prevSnapshot = null; // for change indicators
+
+// ── Live listener ──────────────────────────────────────────────────────────────
+if (isConfigured) {
+  onSnapshot(participantsRef, snap => {
+    const fresh = [];
+    snap.forEach(d => fresh.push({ id: d.id, ...d.data() }));
+    fresh.sort((a, b) => (b.points || 0) - (a.points || 0));
+    participants = fresh;
+    render();
+    updateIdSuggestions();
+    prevSnapshot = snap;
+  });
+
+  onSnapshot(settingsRef, snap => {
+    if (snap.exists()) {
+      const d = snap.data();
+      if (d.title) document.getElementById("boardTitle").textContent = d.title;
+      if (d.subtitle) document.getElementById("boardSubtitle").textContent = d.subtitle;
+      document.getElementById("settingTitle").value = d.title || "";
+      document.getElementById("settingSubtitle").value = d.subtitle || "";
+    }
+  });
+}
+
+// ── Render ─────────────────────────────────────────────────────────────────────
+function render() {
+  const podium = document.getElementById("podium");
+  const listBody = document.getElementById("listBody");
+  const listHeader = document.getElementById("listHeader");
+  const emptyState = document.getElementById("emptyState");
+
+  if (participants.length === 0) {
+    podium.innerHTML = "";
+    listBody.innerHTML = "";
+    listHeader.style.display = "none";
+    emptyState.style.display = "block";
+    return;
+  }
+
+  emptyState.style.display = "none";
+  listHeader.style.display = "grid";
+
+  // ── Podium (top 3) ──
+  const top3 = participants.slice(0, 3);
+  // Reorder: 2nd | 1st | 3rd
+  const order = [top3[1], top3[0], top3[2]].filter(Boolean);
+  const rankClass = ["r2", "r1", "r3"];
+  const rankLabel = ["2nd", "1st", "3rd"];
+  const trueRank = [2, 1, 3];
+
+  podium.innerHTML = order.map((p, i) => {
+    const idx = order.indexOf(p);
+    const rc = rankClass[i];
+    const rl = rankLabel[i];
+    const initials = p.name.split(" ").map(w => w[0]).join("").toUpperCase().slice(0, 2);
+    return `
+      <div class="podium-slot ${rc}">
+        <div class="avatar">${initials}</div>
+        <div class="pname">${esc(p.name)}</div>
+        <div class="podium-block">
+          <div class="podium-rank">${rl}</div>
+          <div class="podium-pts">${(p.points||0).toLocaleString()} pts</div>
+        </div>
+      </div>`;
+  }).join("");
+
+  // ── List (4th onwards) ──
+  listBody.innerHTML = participants.slice(3).map((p, i) => {
+    const rank = i + 4;
+    const change = getChange(p.id);
+    const changeHtml = change > 0
+      ? `<div class="row-change up">▲ +${change}</div>`
+      : change < 0
+        ? `<div class="row-change down">▼ ${change}</div>`
+        : `<div class="row-change">—</div>`;
+
+    return `
+      <div class="list-row" style="animation-delay:${i * 0.04}s">
+        <div class="row-rank">${rank}</div>
+        <div>
+          <div class="row-name">${esc(p.name)}</div>
+          <div class="row-id">${esc(p.id)}</div>
+        </div>
+        <div class="row-pts">${(p.points||0).toLocaleString()}</div>
+        ${changeHtml}
+      </div>`;
+  }).join("");
+
+  // Populate manage table
+  renderPeopleTable();
+}
+
+function getChange(id) {
+  if (!prevSnapshot) return 0;
+  let prev = 0;
+  prevSnapshot.forEach(d => { if (d.id === id) prev = d.data().points || 0; });
+  const curr = (participants.find(p => p.id === id) || {}).points || 0;
+  return curr - prev;
+}
+
+function renderPeopleTable() {
+  const tbody = document.getElementById("peopleRows");
+  if (!tbody) return;
+  tbody.innerHTML = participants.map(p => `
+    <tr>
+      <td style="font-family:'DM Mono',monospace;font-size:11px;color:var(--muted)">${esc(p.id)}</td>
+      <td>${esc(p.name)}</td>
+      <td><input class="pts-input" type="number" value="${p.points||0}" onchange="setPts('${p.id}',this.value)" /></td>
+      <td><button class="btn-danger" onclick="removePerson('${p.id}')">✕</button></td>
+    </tr>`).join("");
+}
+
+function updateIdSuggestions() {
+  const dl = document.getElementById("idSuggestions");
+  dl.innerHTML = participants.map(p => `<option value="${p.id}">${p.name}</option>`).join("");
+}
+
+// ── Admin Actions ──────────────────────────────────────────────────────────────
+window.addPoints = async function() {
+  const id = document.getElementById("ptId").value.trim();
+  const amount = parseInt(document.getElementById("ptAmount").value) || 0;
+  if (!id) return toast("Enter a participant ID", true);
+  if (amount === 0) return toast("Enter a non-zero amount", true);
+
+  const ref = doc(db, "participants", id);
+  const snap = await getDoc(ref);
+  if (!snap.exists()) return toast(`ID "${id}" not found`, true);
+
+  await updateDoc(ref, { points: increment(amount), updatedAt: serverTimestamp() });
+  toast(`${amount > 0 ? "+" : ""}${amount} pts → ${snap.data().name}`);
+  document.getElementById("ptId").value = "";
+  document.getElementById("ptAmount").value = "10";
+  document.getElementById("ptReason").value = "";
+};
+
+window.addPerson = async function() {
+  const name = document.getElementById("newName").value.trim();
+  let id = document.getElementById("newId").value.trim();
+  if (!name) return toast("Enter a name", true);
+  if (!id) id = autoId(name);
+
+  const ref = doc(db, "participants", id);
+  const snap = await getDoc(ref);
+  if (snap.exists()) return toast(`ID "${id}" already exists`, true);
+
+  await setDoc(ref, { name, points: 0, createdAt: serverTimestamp() });
+  document.getElementById("newName").value = "";
+  document.getElementById("newId").value = "";
+  toast(`Added: ${name} (${id})`);
+};
+
+window.removePerson = async function(id) {
+  if (!confirm(`Remove "${id}" from the leaderboard?`)) return;
+  await deleteDoc(doc(db, "participants", id));
+  toast(`Removed ${id}`);
+};
+
+window.setPts = async function(id, val) {
+  await updateDoc(doc(db, "participants", id), { points: parseInt(val) || 0 });
+  toast("Updated");
+};
+
+window.importCSV = async function() {
+  const file = document.getElementById("csvFile").files[0];
+  if (!file) return toast("Select a CSV file first", true);
+  const text = await file.text();
+  const rows = parseCSV(text);
+  if (rows.length === 0) return toast("No valid rows found", true);
+
+  let added = 0;
+  for (const row of rows) {
+    const name = (row.name || row.Name || "").trim();
+    if (!name) continue;
+    const id = (row.id || row.ID || autoId(name));
+    const points = parseInt(row.points || row.Points || 0) || 0;
+    await setDoc(doc(db, "participants", id), { name, points, createdAt: serverTimestamp() }, { merge: true });
+    added++;
+  }
+  toast(`Imported ${added} participants`);
+};
+
+window.saveSettings = async function() {
+  const title = document.getElementById("settingTitle").value.trim();
+  const subtitle = document.getElementById("settingSubtitle").value.trim();
+  await setDoc(settingsRef, { title, subtitle }, { merge: true });
+  toast("Settings saved");
+};
+
+// ── CSV ────────────────────────────────────────────────────────────────────────
+document.getElementById("csvFile").addEventListener("change", function() {
+  const file = this.files[0];
+  if (!file) return;
+  const r = new FileReader();
+  r.onload = e => {
+    const lines = e.target.result.split("\n").slice(0, 6);
+    document.getElementById("csvPreview").value = lines.join("\n");
+  };
+  r.readAsText(file);
+});
+
+function parseCSV(text) {
+  const lines = text.trim().split("\n");
+  if (lines.length < 2) return [];
+  const headers = lines[0].split(",").map(h => h.trim().replace(/^"|"$/g, ""));
+  return lines.slice(1).map(line => {
+    const vals = line.split(",").map(v => v.trim().replace(/^"|"$/g, ""));
+    const obj = {};
+    headers.forEach((h, i) => { obj[h] = vals[i] || ""; });
+    return obj;
+  });
+}
+
+// ── Helpers ────────────────────────────────────────────────────────────────────
+function autoId(name) {
+  return name.toLowerCase().replace(/[^a-z0-9]+/g, "_").replace(/^_+|_+$/g, "")
+    + "_" + Math.random().toString(36).slice(2, 6);
+}
+
+function esc(str) {
+  return String(str || "").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+}
+
+function toast(msg, err) {
+  const el = document.getElementById("toast");
+  el.textContent = msg;
+  el.className = "show" + (err ? " err" : "");
+  clearTimeout(window._toastTimer);
+  window._toastTimer = setTimeout(() => { el.className = ""; }, 3000);
+}
+
+// ── Auth ───────────────────────────────────────────────────────────────────────
+window.openLogin = function() {
+  document.getElementById("loginOverlay").classList.add("active");
+  setTimeout(() => document.getElementById("loginPass").focus(), 100);
+};
+window.closeLogin = function() {
+  document.getElementById("loginOverlay").classList.remove("active");
+  document.getElementById("loginPass").value = "";
+};
+window.doLogin = function() {
+  const pass = document.getElementById("loginPass").value;
+  if (pass === window.ADMIN_PASSWORD) {
+    closeLogin();
+    openAdmin();
+  } else {
+    toast("Wrong password", true);
+  }
+};
+window.openAdmin = function() {
+  if (!isConfigured) return toast("Configure Firebase first", true);
+  document.getElementById("adminOverlay").classList.add("active");
+};
+window.closeAdmin = function() {
+  document.getElementById("adminOverlay").classList.remove("active");
+};
+
+window.switchTab = function(tab) {
+  document.querySelectorAll(".tab").forEach((t, i) => {
+    const names = ["points","people","import","settings"];
+    t.classList.toggle("active", names[i] === tab);
+  });
+  document.querySelectorAll(".tab-panel").forEach(p => {
+    p.classList.toggle("active", p.id === "tab-" + tab);
+  });
+};
+
+// Close overlays on backdrop click
+document.getElementById("loginOverlay").addEventListener("click", e => {
+  if (e.target === e.currentTarget) closeLogin();
+});
+document.getElementById("adminOverlay").addEventListener("click", e => {
+  if (e.target === e.currentTarget) closeAdmin();
+});
+
+// Expose for inline onclick
+window.renderPeopleTable = renderPeopleTable;
+</script>
+</body>
+</html>
