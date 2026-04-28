@@ -540,6 +540,7 @@ From laughter to chaos, from sweet cravings to spicy regrets, Hog-a-thon is desi
 
 ||🚨 Disclaimer
 We are not responsible for any allergies or reactions. Please participate at your own discretion.
+NO REFUNDS WILL BE GIVEN UNDER ANY CIRCUMSTANCE
 
 |Get ready to eat, compete, and survive the madness. 🍽️🔥`,
     gi: `• Players must report to the venue at least 25–30 minutes
@@ -578,7 +579,8 @@ A round is only considered complete once a player raises their
 hand and demonstrates an empty mouth to a Guard. Swallowing
 must be visible and verified before the clock is officially stopped
 for that individual. ||| Disclaimer: |
-Participants are advised to be mindful of their own food allergies, intolerances, or dietary restrictions before taking part in the Hog-a-thon. The organizers will not be held responsible for any allergic reactions, health issues, or discomfort arising from the consumption of food during the event. Participation is at your own risk.`,
+Participants are advised to be mindful of their own food allergies, intolerances, or dietary restrictions before taking part in the Hog-a-thon. The organizers will not be held responsible for any allergic reactions, health issues, or discomfort arising from the consumption of food during the event. Participation is at your own risk.||
+NO REFUNDS WILL BE GIVEN UNDER ANY CIRCUMSTANCE`,
     Rfee: 200,
     pool: 2000, 
   },
